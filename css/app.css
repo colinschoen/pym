@@ -15,6 +15,12 @@ body {
     padding-top: 30px;
 }
 
+@media only screen and (min-width: 481px){
+  body {
+    font-size:100%
+  }
+}
+
 .hero {
     font-size: 100pt; 
 }
@@ -28,4 +34,268 @@ body {
 
 .center-text {
     text-align: center;
+}
+
+.footer {
+  clear: both;
+  background-color: #231F20;
+  color: #F8F9FA;
+  padding: 5em 0px 3em;
+  text-align: center;
+  display: block;
+  font-size: 18px
+}
+
+.contact-body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 90%;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #231F20;
+}
+
+.wrap {
+  width:96%;
+  margin:0 auto
+}
+
+@media only screen and (min-width: 1030px){
+  .wrap {
+    width:1040px
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .wrap{
+    width:760px
+  }
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.4em;
+    margin-bottom: 0.375em;
+}
+
+.footer h2 {
+    font-size: 160%;
+    margin-bottom: 1em;
+    text-rendering: optimizelegibility;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+div.wpcf7 {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+}
+
+@media only screen and (min-width: 1030px){
+  .wrap{
+    width:1040px
+  }
+
+  #about,.contactform,form{
+    width:66%
+  }
+
+  .single .hentry .entry-content p{
+    max-width:85%
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+  .wrap{
+    width:760px
+  }
+
+  .header nav{
+    padding-right:0
+  }
+
+  .nav{
+    border:0
+  }
+
+  .nav ul{
+    background:#231f20;
+    margin-top:0
+  }
+
+  .nav li{
+    float:left;
+    position:relative
+  }
+
+  .nav li a{
+    border-bottom:0
+  }
+
+  .nav li a:hover,.nav li a:focus{
+    color:#1898b2;
+    text-decoration:none
+  }
+
+  .nav li ul.sub-menu,.nav li ul.children{
+    margin-top:0;
+    border:1px solid #ccc;
+    border-top:0;
+    position:absolute;
+    visibility:hidden;
+    z-index:8999
+  }
+
+  .nav li ul.sub-menu li a,.nav li ul.children li a{
+    padding-left:10px;
+    border-right:0;
+    display:block;
+    width:180px;
+    border-bottom:1px solid #ccc
+  }
+
+  .nav li ul.sub-menu li:last-child a,.nav li ul.children li:last-child a{
+    border-bottom:0
+  }
+
+  .nav li ul.sub-menu li ul,.nav li ul.children li ul{
+    top:0;
+    left:100%
+  }
+
+  .nav li:hover>ul{
+    top:auto;
+    visibility:visible
+  }
+
+  .sidebar{
+    margin-top:2.2em
+  }
+
+  .widgettitle{
+    border-bottom:2px solid #444;
+    margin-bottom:0.75em
+  }
+
+  .widget{
+    padding:0 10px;
+    margin:2.2em 0
+  }
+
+  .widget ul li{
+    margin-bottom:0.75em
+  }
+
+  .widget ul li ul{
+    margin-top:0.75em;
+    padding-left:1em
+  }
+
+  #about,.contactform,form{
+    width:90%
+  }
+
+}
+
+.contactform, form {
+    width: 96%;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.fieldcontainer {
+    width: 49.5%;
+    padding-right: 1%;
+    display: inline-block;
+}
+
+.footer .fieldcontainer {
+    width: 100%;
+    padding-right: 1%;
+}
+
+/* Text Box */
+.contact-textarea {
+    max-width: 100%;
+    min-height: 120px;
+    padding-top: 0.75em;
+    line-height: 1.5em;
+    overflow: auto;
+}
+
+/* FORM LABELS */
+.wpcf7-form p, label {
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #686769;
+    font-size: 72%;
+    text-align: left;
+}
+
+span.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,.field{
+  display:block;
+  height:60px;
+  line-height:100%;
+  padding:0 12px;
+  margin-bottom:14px;
+  font-size:1em;
+  color:#231f20;
+  vertical-align:middle;
+  box-shadow:none;
+  border:0;
+  width:88%;
+  max-width:400px;
+  font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:300;
+  font-size:105%;
+  background-color:#eaedf2;
+  -webkit-transition:background-color 0.30s ease-in-out;
+  transition:background-color 0.30s ease-in-out
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #2E2A2B none repeat scroll 0% 0%;
+    border: medium none;
+    padding: 1.5em;
+    width: 93%;
+    margin: 0px auto;
+    font-size: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #EAEDF2;
+    transition: background-color 0.30s ease-in-out 0s;
+}
+
+/* Response Output */
+div.wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+}
+
+.wpcf7-display-none {
+    display: none;
+}
+
+.contact-fieldcontainer {
+    width: 49.5%;
+    padding-right: 1%;
+    display: inline-block;
 }
