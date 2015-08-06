@@ -1,0 +1,6 @@
+.dark-bg {
+    background-image: url('/images/groovepaper.png');
+}
+.light-bg {
+    background-image: url('/images/dark_bg.png');
+}
