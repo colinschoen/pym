@@ -10,6 +10,15 @@
     color: #FFF;
 }
 
+nav.navbar.navbar-fixed-top {
+    background-color: #FFF;
+}
+
+.client-li {
+    display: inline;
+    margin-right: 30px; 
+}
+
 .wide {
     width: 100%;
     height: 400px;
