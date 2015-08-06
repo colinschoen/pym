@@ -31,11 +31,12 @@ body {
     padding-top: 40px;
 }
 
-@media only screen and (min-width: 481px){
+/*@media only screen and (min-width: 481px){
   body {
     font-size:100%
   }
 }
+*/
 
 .hero {
     font-size: 100pt; 
@@ -90,11 +91,12 @@ body {
   }
 }
 
-h2 {
+/*h2 {
     font-size: 1.75em;
     line-height: 1.4em;
     margin-bottom: 0.375em;
 }
+ */
 
 .footer h2 {
     font-size: 160%;
