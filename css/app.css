@@ -10,6 +10,10 @@
     color: #FFF;
 }
 
+.navbar-txt {
+  color:black;
+}
+
 nav.navbar.navbar-fixed-top {
     background-color: #FFF;
 }
@@ -329,3 +333,54 @@ div.wpcf7-response-output {
     padding-right: 1%;
     display: inline-block;
 }
+
+/* Testimonials */
+.testimonial-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:300px;
+}
+
+.testimonial-img {
+    display: block;
+    /*margin-left: auto;*/
+    margin-right: auto;
+    max-width :1150px;
+    padding-bottom: 3%;
+}
+
+.testimonial-p {
+  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.8;
+  color: #848484;
+  width: 70%;
+  float: left;
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: auto;
+  display: block;
+  margin: 25px 0px;
+}
+
+.testimonial-button {
+  background-color: #002F5F;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 49.9%, transparent 50%, transparent 100%);
+  background-position: 0px 100%;
+  background-size: 100% 200%;
+  transition: #6363CE 0.25s ease 0s, color 0.15s linear 0s;
+  float: right;
+  margin: 25px 0px;
+  border: medium none;
+  color: #FFF;
+  display: inline-block;
+  line-height: 1.6;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: auto;
+  }
