@@ -384,3 +384,62 @@ div.wpcf7-response-output {
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: auto;
   }
+
+/* Team Section */
+.team {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Josefin Sans",Molengo,Charcoal,Allerta,Cardo;
+}
+
+/*.team-img {
+  border-radius: 50%;
+  width: 145px;
+  height: 145px;
+  vertical-align: middle;
+  border: 0px none;
+  text-align: center;
+}*/
+
+.team-title {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: gray;
+}
+
+.overlay { 
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-top: 20px
+}
+
+.overlay img {
+  width: 145px;
+  height: 145px;
+  vertical-align: middle;
+  border: 0px none;
+}
+
+.overlay:after {
+  content: '\A'; 
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  top:0; 
+  left:0;
+  background:rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  cursor: pointer;
+}
+
+.overlay:hover:after {
+    opacity: 1;
+}
