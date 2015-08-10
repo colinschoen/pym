@@ -455,47 +455,20 @@ div.wpcf7-response-output {
   width: 100%;
 }
 
-.about-left {
-  width: 50%;
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-  float: left;
-  text-align: left;
-  line-height: 1.42857;
-  margin: 0px 0px 10px;
-  padding: 10px 0px 0px;
-}
-
-.about-left h2 {
-  font-family: adobe-caslon-pro,"Times New Roman",Times,serif;
-  color: #444;
-  font-size: 4rem;
-  padding-left: 60px;
-  width: 85%;
-}
-
-.about-right {
-  width: 50%;
-  float: right;
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden;
-  margin: auto;
-  width: 50%;
-}
-
-.about-right p {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 2;
-  color: #888;
-  padding-top: 2.5rem;
-  margin-left: 30px;
-  text-align: left;
-  display: table;
-  height: auto;
-  overflow: hidden;
+.about h2 {
+  font-family: "Mercury Display A","Mercury Display B",serif;
+  font-size: 5rem;
   width:75%;
+  text-align: justify;
+}
+
+.about p {
+  margin: 25px 0px;
+  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  font-size: 2rem;
+  width:75%;
+  color: #848484;
+  text-align: justify;
 }
