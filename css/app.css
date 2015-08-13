@@ -472,3 +472,39 @@ div.wpcf7-response-output {
   color: #848484;
   text-align: justify;
 }
+
+/* Carousel */
+
+.carousel-inner {
+  max-height: 750px;
+}
+
+.carousel-text {
+  margin-top: 100px;
+      max-width: 74rem;
+    padding: 0px 4rem;
+    margin-left: auto;
+margin-right: auto;
+  
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-text h2 {
+  width: 100%;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1.5rem;
+  font-family: "HelveticaNeueW01-77BdCn_692722";
+  font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
