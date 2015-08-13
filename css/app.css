@@ -573,10 +573,11 @@ Class name automatically added to element */
 
 .carousel-ti-container {
     position: relative;
+}
 
 .section-header {
   background-color: transparent;
-  background-image: url("../images/gallery_bg.jpg");
+  background-image: url("../images/dark_bg.png");
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: 0% 0%;
@@ -584,8 +585,9 @@ Class name automatically added to element */
   display: block;
   overflow: visible;
   width: 125%;
-  height: 50%;
   margin-left: -25%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .section-header h1 {
