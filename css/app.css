@@ -391,16 +391,21 @@ div.wpcf7-response-output {
   margin-top: 20px;
   text-align: center;
   font-family: "Josefin Sans",Molengo,Charcoal,Allerta,Cardo;
+  color: black;
 }
 
-/*.team-img {
-  border-radius: 50%;
+.team-img {
   width: 145px;
   height: 145px;
   vertical-align: middle;
   border: 0px none;
   text-align: center;
-}*/
+}
+
+.team a {
+  color: black;
+  text-decoration: none;
+}
 
 .team-title {
   margin-right: 10px;
