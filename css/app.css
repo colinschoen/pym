@@ -11,7 +11,7 @@
 }
 
 .navbar-txt {
-  color:black;
+    color:black;
 }
 
 nav.navbar.navbar-fixed-top {
@@ -45,21 +45,21 @@ body {
 }
 
 /*@media only screen and (min-width: 481px){
-  body {
-    font-size:100%
+body {
+font-size:100%
   }
 }
-*/
+ */
 
-.hero {
-    font-size: 100pt; 
-    font-family: bebas;
+    .hero {
+        font-size: 100pt; 
+        font-family: bebas;
 }
 
 .quoted:before {
-   content: "\201C";
-   font-weight: bold;
-   font-size: 100px;
+    content: "\201C";
+    font-weight: bold;
+    font-size: 100px;
 }
 
 .large-icon {
@@ -70,54 +70,54 @@ body {
 }
 
 .footer {
-  clear: both;
-  background-color: #231F20;
-  color: #F8F9FA;
-  padding: 5em 0px 3em;
-  text-align: center;
-  display: block;
-  font-size: 18px
+    clear: both;
+    background-color: #231F20;
+    color: #F8F9FA;
+    padding: 5em 0px 3em;
+    text-align: center;
+    display: block;
+    font-size: 18px
 }
 
 .contact-body {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 90%;
-  font-weight: 300;
-  line-height: 1.75;
-  color: #231F20;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #231F20;
 }
 
 .wrap {
-  width:96%;
-  margin:0 auto
+    width:96%;
+    margin:0 auto
 }
 
 @media only screen and (min-width: 1030px){
-  .wrap {
-    width:1040px
+    .wrap {
+        width:1040px
   }
 }
 
 @media only screen and (min-width: 768px){
-  .wrap{
-    width:760px
+    .wrap{
+        width:760px
   }
 }
 
 /*h2 {
-    font-size: 1.75em;
-    line-height: 1.4em;
-    margin-bottom: 0.375em;
+font-size: 1.75em;
+line-height: 1.4em;
+margin-bottom: 0.375em;
 }
  */
 
-.footer h2 {
-    font-size: 160%;
-    margin-bottom: 1em;
-    text-rendering: optimizelegibility;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
+    .footer h2 {
+        font-size: 160%;
+        margin-bottom: 1em;
+        text-rendering: optimizelegibility;
+        font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
 }
 
 div.wpcf7 {
@@ -137,108 +137,108 @@ div.wpcf7 .screen-reader-response {
 }
 
 @media only screen and (min-width: 1030px){
-  .wrap{
-    width:1040px
+    .wrap{
+        width:1040px
   }
 
   #about,.contactform,form{
-    width:66%
+      width:66%
   }
 
   .single .hentry .entry-content p{
-    max-width:85%
+      max-width:85%
   }
 
 }
 
 @media only screen and (min-width: 768px){
-  .wrap{
-    width:760px
+    .wrap{
+        width:760px
   }
 
   .header nav{
-    padding-right:0
+      padding-right:0
   }
 
   .nav{
-    border:0
+      border:0
   }
 
   .nav ul{
-    background:#231f20;
-    margin-top:0
+      background:#231f20;
+      margin-top:0
   }
 
   .nav li{
-    float:left;
-    position:relative
+      float:left;
+      position:relative
   }
 
   .nav li a{
-    border-bottom:0
+      border-bottom:0
   }
 
   .nav li a:hover,.nav li a:focus{
-    color:#1898b2;
-    text-decoration:none
+      color:#1898b2;
+      text-decoration:none
   }
 
   .nav li ul.sub-menu,.nav li ul.children{
-    margin-top:0;
-    border:1px solid #ccc;
-    border-top:0;
-    position:absolute;
-    visibility:hidden;
-    z-index:8999
+      margin-top:0;
+      border:1px solid #ccc;
+      border-top:0;
+      position:absolute;
+      visibility:hidden;
+      z-index:8999
   }
 
   .nav li ul.sub-menu li a,.nav li ul.children li a{
-    padding-left:10px;
-    border-right:0;
-    display:block;
-    width:180px;
-    border-bottom:1px solid #ccc
+      padding-left:10px;
+      border-right:0;
+      display:block;
+      width:180px;
+      border-bottom:1px solid #ccc
   }
 
   .nav li ul.sub-menu li:last-child a,.nav li ul.children li:last-child a{
-    border-bottom:0
+      border-bottom:0
   }
 
   .nav li ul.sub-menu li ul,.nav li ul.children li ul{
-    top:0;
-    left:100%
+      top:0;
+      left:100%
   }
 
   .nav li:hover>ul{
-    top:auto;
-    visibility:visible
+      top:auto;
+      visibility:visible
   }
 
   .sidebar{
-    margin-top:2.2em
+      margin-top:2.2em
   }
 
   .widgettitle{
-    border-bottom:2px solid #444;
-    margin-bottom:0.75em
+      border-bottom:2px solid #444;
+      margin-bottom:0.75em
   }
 
   .widget{
-    padding:0 10px;
-    margin:2.2em 0
+      padding:0 10px;
+      margin:2.2em 0
   }
 
   .widget ul li{
-    margin-bottom:0.75em
+      margin-bottom:0.75em
   }
 
   .widget ul li ul{
-    margin-top:0.75em;
-    padding-left:1em
+      margin-top:0.75em;
+      padding-left:1em
   }
 
   #about,.contactform,form{
-    width:90%
+      width:90%
   }
 
 }
@@ -284,28 +284,28 @@ span.wpcf7-form-control-wrap {
 }
 
 input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,.field{
-  display:block;
-  height:60px;
-  line-height:100%;
-  padding:0 12px;
-  margin-bottom:14px;
-  font-size:1em;
-  color:#231f20;
-  vertical-align:middle;
-  box-shadow:none;
-  border:0;
-  width:88%;
-  max-width:400px;
-  font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight:300;
-  font-size:105%;
-  background-color:#eaedf2;
-  -webkit-transition:background-color 0.30s ease-in-out;
-  transition:background-color 0.30s ease-in-out
+    display:block;
+    height:60px;
+    line-height:100%;
+    padding:0 12px;
+    margin-bottom:14px;
+    font-size:1em;
+    color:#231f20;
+    vertical-align:middle;
+    box-shadow:none;
+    border:0;
+    width:88%;
+    max-width:400px;
+    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:300;
+    font-size:105%;
+    background-color:#eaedf2;
+    -webkit-transition:background-color 0.30s ease-in-out;
+    transition:background-color 0.30s ease-in-out
 }
 
-/* Submit Button */
-input[type="submit"] {
+    /* Submit Button */
+    input[type="submit"] {
     background: #2E2A2B none repeat scroll 0% 0%;
     border: medium none;
     padding: 1.5em;
@@ -318,10 +318,10 @@ input[type="submit"] {
     transition: background-color 0.30s ease-in-out 0s;
 }
 
-/* Response Output */
-div.wpcf7-response-output {
-    margin: 2em 0.5em 1em;
-    padding: 0.2em 1em;
+    /* Response Output */
+    div.wpcf7-response-output {
+        margin: 2em 0.5em 1em;
+        padding: 0.2em 1em;
 }
 
 .wpcf7-display-none {
@@ -351,98 +351,98 @@ div.wpcf7-response-output {
 }
 
 .testimonial-p {
-  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 1.8;
-  color: #848484;
-  width: 70%;
-  float: left;
-  text-rendering: optimizelegibility;
-  -moz-osx-font-smoothing: auto;
-  display: block;
-  margin: 25px 0px;
+    font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1.8;
+    color: #848484;
+    width: 70%;
+    float: left;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: auto;
+    display: block;
+    margin: 25px 0px;
 }
 
 .testimonial-button {
-  background-color: #002F5F;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 49.9%, transparent 50%, transparent 100%);
-  background-position: 0px 100%;
-  background-size: 100% 200%;
-  transition: #6363CE 0.25s ease 0s, color 0.15s linear 0s;
-  float: right;
-  margin: 25px 0px;
-  border: medium none;
-  color: #FFF;
-  display: inline-block;
-  line-height: 1.6;
-  padding: 15px 40px;
-  font-size: 20px;
-  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
-  font-weight: 300;
-  text-rendering: optimizelegibility;
-  -moz-osx-font-smoothing: auto;
+    background-color: #002F5F;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 49.9%, transparent 50%, transparent 100%);
+    background-position: 0px 100%;
+    background-size: 100% 200%;
+    transition: #6363CE 0.25s ease 0s, color 0.15s linear 0s;
+    float: right;
+    margin: 25px 0px;
+    border: medium none;
+    color: #FFF;
+    display: inline-block;
+    line-height: 1.6;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: auto;
   }
 
-/* Team Section */
-.team {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
-  font-family: "Josefin Sans",Molengo,Charcoal,Allerta,Cardo;
-  color: black;
+  /* Team Section */
+  .team {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Josefin Sans",Molengo,Charcoal,Allerta,Cardo;
+      color: black;
 }
 
 .team-img {
-  width: 145px;
-  height: 145px;
-  vertical-align: middle;
-  border: 0px none;
-  text-align: center;
+    width: 145px;
+    height: 145px;
+    vertical-align: middle;
+    border: 0px none;
+    text-align: center;
 }
 
 .team a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 .team-title {
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: gray;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: gray;
 }
 
 .overlay { 
-  position: relative;
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  padding-top: 20px
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding-top: 20px
 }
 
 .overlay img {
-  width: 145px;
-  height: 145px;
-  vertical-align: middle;
-  border: 0px none;
+    width: 145px;
+    height: 145px;
+    vertical-align: middle;
+    border: 0px none;
 }
 
 .overlay:after {
-  content: '\A'; 
-  position: absolute;
-  width: 100%; 
-  height: 100%;
-  top:0; 
-  left:0;
-  background:rgba(0,0,0,0.6);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  cursor: pointer;
+    content: '\A'; 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    cursor: pointer;
 }
 
 .overlay:hover:after {
@@ -465,19 +465,19 @@ div.wpcf7-response-output {
 
 /* UL/OL/DIV - the element that simplyScroll is inited on
 Class name automatically added to element */
-.simply-scroll-list { 
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    .simply-scroll-list { 
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        list-style: none;
 }
-    
+
 .simply-scroll-list li {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-    
+
 .simply-scroll-list li img {
     border: none;
     display: block;
@@ -487,11 +487,11 @@ Class name automatically added to element */
 
 .simply-scroll is default base class */
 
-/* Container DIV */
-.simply-scroll { 
-    width: 100%;
-    height: 200px;
-    margin-bottom: 1em;
+    /* Container DIV */
+    .simply-scroll { 
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1em;
 }
 
 /* Clip DIV */
@@ -500,7 +500,7 @@ Class name automatically added to element */
     width: 100%
     height: 200px;
 }
-    
+
 /* Explicitly set height/width of each list item */ 
 .simply-scroll .simply-scroll-list li {
     float: left; /* Horizontal scroll only */
@@ -510,64 +510,67 @@ Class name automatically added to element */
 /* About Section */
 
 .about {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  overflow: hidden;
-  margin: auto;
-  max-width: 160rem;
-  width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    margin: auto;
+    max-width: 160rem;
+    width: 100%;
 }
 
 .about h2 {
-  font-family: "Mercury Display A","Mercury Display B",serif;
-  font-size: 5rem;
-  width:75%;
-  text-align: justify;
+    font-family: "Mercury Display A","Mercury Display B",serif;
+    font-size: 5rem;
+    width:75%;
+    text-align: justify;
 }
 
 .about p {
-  margin: 25px 0px;
-  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
-  font-weight: 300;
-  text-rendering: optimizelegibility;
-  font-size: 2rem;
-  width:75%;
-  color: #848484;
-  text-align: justify;
+    margin: 25px 0px;
+    font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+    font-weight: 300;
+    text-rendering: optimizelegibility;
+    font-size: 2rem;
+    width:75%;
+    color: #848484;
+    text-align: justify;
 }
 
 /* Carousel */
 
 .carousel-inner {
-  max-height: 750px;
+    height: 700px;
 }
 
 .carousel-text {
-  margin-top: 100px;
-      max-width: 74rem;
+    margin-top: 100px;
+    max-width: 74rem;
     padding: 0px 4rem;
     margin-left: auto;
-margin-right: auto;
-  
-  position: absolute;
-  top: 0px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    margin-right: auto;
+    position: absolute;
+    top: 0px;
+    left: 15%;
+    z-index: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
 .carousel-text h2 {
-  width: 100%;
-  float: left;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 1.5rem;
-  font-family: "HelveticaNeueW01-77BdCn_692722";
-  font-size: 5rem;
-  line-height: 1;
-  text-transform: uppercase;
+    width: 100%;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 1.5rem;
+    font-family: "HelveticaNeueW01-77BdCn_692722";
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.carousel-ti-container {
+    position: relative;
 }
