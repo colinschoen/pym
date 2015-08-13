@@ -507,3 +507,67 @@ Class name automatically added to element */
     width: 290px;
     height: 200px;
 }
+/* About Section */
+
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  margin: auto;
+  max-width: 160rem;
+  width: 100%;
+}
+
+.about h2 {
+  font-family: "Mercury Display A","Mercury Display B",serif;
+  font-size: 5rem;
+  width:75%;
+  text-align: justify;
+}
+
+.about p {
+  margin: 25px 0px;
+  font-family: "Whitney SSm A","Whitney SSm B",sans-serif;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  font-size: 2rem;
+  width:75%;
+  color: #848484;
+  text-align: justify;
+}
+
+/* Carousel */
+
+.carousel-inner {
+  max-height: 750px;
+}
+
+.carousel-text {
+  margin-top: 100px;
+      max-width: 74rem;
+    padding: 0px 4rem;
+    margin-left: auto;
+margin-right: auto;
+  
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-text h2 {
+  width: 100%;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1.5rem;
+  font-family: "HelveticaNeueW01-77BdCn_692722";
+  font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}

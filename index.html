@@ -61,6 +61,65 @@
         <!-- /.container -->
         </nav> 
 
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/bridge.jpg" alt="...">
+      <div class="carousel-text">
+            <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/tiger.jpg" alt="...">
+      <div class="carousel-text">
+            <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/mountain.jpg" alt="...">
+      <div class="carousel-text">
+            <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+
+<script>
+    $('.carousel').carousel({
+        interval: 3000
+    })
+</script>
+
+
+
+
     <!-- Page Content -->
     <div class="wide dark-bg">
         <div class="col-lg-12 center-text">
@@ -68,9 +127,21 @@
             <p class="lead quoted animated fadeInLeft">We build rapid organizations breakthroughs to enable success<strong>...</strong></p>
             <button class="btn btn-default animated fadeInUp">Learn More <i class="fa fa-chevron-down fa-fw"></i></button>
         </div>
-        </div>
     </div>
+
     <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 about">
+                <h2> We are a team of sons, fathers, 
+                     and husbands that can quick empathize and understand others.
+                 </h2>
+                  <p>
+                    Our about text will go here. This is where we could talk about who we are and what exactly it is that we do. Our about text will go here. This is where we could talk about who we are and what exactly it is that we do. 
+                </p>
+            </div>    
+        </div>
+        
         <div class="row">
             <div class="col-lg-12">
                 <h2>Services</h2>
@@ -90,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+<!--         <div class="row">
             <div class="col-lg-12">
                 <h2>About</h2>
                 <blockquote>
@@ -103,8 +174,7 @@
                     We specialize in diagnoses, which you can’t do yourself. which leads to strategy.
                 </blockquote>
             </div>
-        </div>
-
+        </div>-->
 
         <div class="row">
             <div class="col-lg-12">
@@ -143,32 +213,32 @@
 
             <div class="col-lg-4 team">
                 <a href="images/team2.jpg" data-toggle="lightbox">
-                <div class="overlay">
-                    
-                        <img class="team-img" src="images/team1.jpg">
-                        <h2>First Last</hw>
-                        <p class="team-title">CEO</p>
-                    
-                </div>
-                </a> 
+                    <div class="overlay">
+                            <img class="team-img" src="images/team1.jpg">
+                            <h2>First Last</h2>
+                            <p class="team-title">CEO</p>
+                    </div> 
+                </a>
             </div>
 
             <div class="col-lg-4 team">
-                <div class="overlay">
-                    <img class="team-img" src="images/team2.jpg">
-                    <h2>First Last</hw>
-                    <p class="team-title">CFO</p> 
-                </div>
+                <a href="images/team2.jpg" data-toggle="lightbox">
+                    <div class="overlay">
+                            <img class="team-img" src="images/team2.jpg">
+                            <h2>First Last</h2>
+                            <p class="team-title">CFO</p>
+                    </div> 
+                </a>
             </div>
 
             <div class="col-lg-4 team">
-                <div class="overlay">
-                    <a href="images/team1.jpg" data-toggle="lightbox">
-                        <img class="team-img" src="images/team3.jpg">
-                        <h2>First Last</hw>
-                        <p class="team-title">CMO</p> 
-                    </a>
-                </div>
+                <a href="images/team2.jpg" data-toggle="lightbox">
+                    <div class="overlay">
+                            <img class="team-img" src="images/team3.jpg">
+                            <h2>First Last</h2>
+                            <p class="team-title">CMO</p>
+                    </div> 
+                </a>
             </div>
                
 
