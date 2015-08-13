@@ -580,11 +580,12 @@ Class name automatically added to element */
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: 0% 0%;
-  background-size: auto auto;
   padding: 90px 0px;
   display: block;
   overflow: visible;
-  width: 100%;
+  width: 125%;
+  height: 50%;
+  margin-left: -25%;
 }
 
 .section-header h1 {
