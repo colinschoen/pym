@@ -597,3 +597,78 @@ Class name automatically added to element */
   margin-bottom: 15px;
   letter-spacing: -3px;
 }
+
+/* Featured Work */
+.work-container {
+  position: relative;
+width: 736px;
+margin: 0px auto;
+padding: 0px;
+font-family: "Open Sans",sans-serif;
+font-size: 17px;
+line-height: 1.45;
+font-weight: 300;
+font-weight: normal;
+font-style: normal;
+list-style: outside none none;
+}
+
+.work-inner {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.work-img {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  margin-right: 0px;
+  margin-left: 10px;
+  width: 164px;
+}
+
+.work-text {
+  width: 532px;
+  margin-left: 0px;
+  margin-right: 10px;
+  float: right;
+  display: inline;
+}
+
+.work-text h2 {
+  font-family: "Vollkorn",serif;
+line-height: 1.2;
+font-size: 36px;
+margin: 20px 0px;
+color: black;
+}
+
+.work-text p {
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 300;
+  margin: 20px 0px 40px;
+  color: #444;
+  padding-right: 13px;
+}
+
+.section-header h1:before,
+.section-header h1:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  vertical-align: middle;
+  background: #f0f0f0;
+}
+
+.section-header h1:before {    
+  left: -.5em;
+  margin: 0 0 0 -10%;
+}
+.section-header h1:after {    
+  left: .5em;
+  margin: 0 -10% 0 0;
+}
