@@ -12,11 +12,11 @@
         <title>Riverene Leadership</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/cosmo.css" rel="stylesheet">
-        <link href="css/app.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/cosmo.css" rel="stylesheet">
+        <link href="/css/app.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link href="css/animate.css" rel="stylesheet">
+        <link href="/css/animate.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -230,7 +230,7 @@
 
             <div class="row">
                 <div class="col-lg-4 team">
-                    <a href="images/team2.jpg" data-toggle="lightbox">
+                    <a href="/images/team2.jpg" data-toggle="lightbox">
                         <div class="overlay">
                             <img class="team-img" src="images/team1.jpg">
                             <h2>First Last</h2>
@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="col-lg-4 team">
-                    <a href="images/team2.jpg" data-toggle="lightbox">
+                    <a href="/images/team2.jpg" data-toggle="lightbox">
                         <div class="overlay">
                             <img class="team-img" src="images/team2.jpg">
                             <h2>First Last</h2>
@@ -250,7 +250,7 @@
                 </div>
 
                 <div class="col-lg-4 team">
-                    <a href="images/team2.jpg" data-toggle="lightbox">
+                    <a href="/images/team2.jpg" data-toggle="lightbox">
                         <div class="overlay">
                             <img class="team-img" src="images/team3.jpg">
                             <h2>First Last</h2>
