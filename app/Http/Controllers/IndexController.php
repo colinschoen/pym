@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use Auth, Hash, Request;
-use App\User;
+use App\User, App\Content;
 
 class IndexController extends Controller {
 
@@ -37,10 +37,10 @@ class IndexController extends Controller {
 		$password = Request::input("inputPassword");
 		$users = User::where("username", "=", $user)->first();
 		if (empty($users)) {
-			return redirect()->route("admin")->with("message", "No user exists with that username.");
+			return redirect()->route("adminlogin")->with("message", "No user exists with that username.");
 		}
 		else if (!Hash::check($password, $users->password)) {
-			return redirect()->route("admin")->with("message", "Invalid password.");
+			return redirect()->route("adminlogin")->with("message", "Invalid password.");
 		}
 		else {
 			//Valid credentials
@@ -85,5 +85,13 @@ class IndexController extends Controller {
 		Auth::logout();
 		return redirect()->route("adminlogin")->with("message", "You have successfully been logged out.");
 	}
+
+    /**
+	 * Get a bcrypt hash of a string
+	 * @return String
+	 */
+	public function get_hash($string) {
+		die(Hash::make($string));
+    }
 
 }
