@@ -40,22 +40,31 @@
     <div class="row" style="margin-top: 50px;">
         <div class="col-lg-3">
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#htext">Header</a></li>
+                <li class="active"><a href="#htext1">Header Slide 1</a></li>
+                <li class=""><a href="#htext2">Header Slide 2</a></li>
+                <li class=""><a href="#htext3">Header Slide 3</a></li>
+                <li class=""><a href="#htext4">Header Slide 4</a></li>
             </ul>
         </div>
         <div class="col-lg-9">
             <div class="tab-content">
-                <div id="htext" class="well">
-                    <h5>Header Text:</h5>
-                    <textarea id="inputHText"></textarea>
-                    <br />
-                    <h5>Header Link Text:</h5>
-                    <input type="text" class="form-control" placeholder="e.g. More Information" />
-                    <br />
-                    <h5>Header Link href:</h5>
-                    <input type="text" class="form-control" placeholder="e.g. http://google.com" />
-                    <br />
-                    <button class="btn btn-success">Save</button>
+                <div id="htext1" class="well">
+                    <form action="#" method="POST">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <label>Header Text:</label>
+                        <textarea id="inputText" id="inputHText"></textarea>
+                        <br />
+                        <label>Header Link Text:</label>
+                        <input name="inputLinkText" type="text" class="form-control" placeholder="e.g. More Information" />
+                        <br />
+                        <label>Header Link href:</label>
+                        <input type="text" name="inputLinkHref" class="form-control" placeholder="e.g. http://google.com" />
+                        <br />
+                        <label>Background </label>
+                        <input type="file" name="inputBackground" />
+                        <br />
+                        <button class="btn btn-success">Save</button>
+                    </form>
                 </div>
             </div>
         </div>
