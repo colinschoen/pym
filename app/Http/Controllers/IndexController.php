@@ -27,6 +27,15 @@ class IndexController extends Controller {
 
 
 	/**
+	 * Show the application login page
+	 * @return Response
+	 */
+	public function get_admin_login() {
+		return view("admin.admin_login");
+	}
+
+
+	/**
 	 * Process an application login request
 	 *
 	 * @return Response
@@ -45,7 +54,7 @@ class IndexController extends Controller {
 		else {
 			//Valid credentials
 			Auth::loginUsingId($users->id);
-			return redirect()->route("admindashboard")->with("message", "Successfully logged in.");
+			return redirect()->route("admin")->with("message", "Successfully logged in.");
 		}
 	}
 
@@ -54,11 +63,11 @@ class IndexController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function get_admin_login()
+	public function get_admin()
 	{
 		//Get our content
 		$content = Content::orderBy("name");
-		return view('admin')->with(["content" => $content]);
+		return view('admin.admin')->with(["content" => $content]);
 	}
 
 	/**

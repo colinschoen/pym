@@ -2,23 +2,22 @@
     <meta charset="utf-8">
     <title>PYM Admin Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style type="text/css">
         @CHARSET "UTF-8";
         /*
         over-ride "Weak" message, show font in dark grey
         */
 
-        .progress-bar {
-            color: #333;
-        }
-
-
         * {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             outline: none;
+        }
+
+        .label.label-error {
+            color: #df050c;
         }
 
         .form-control {
@@ -75,25 +74,17 @@
     </style>
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        window.alert = function(){};
-        var defaultCSS = document.getElementById('bootstrap-css');
-        function changeCSS(css){
-            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />');
-            else $('head > link').filter(':first').replaceWith(defaultCSS);
-        }
-    </script>
 </head>
 <body style="">
 <div class="container">
     <div class="row" id="pwd-container">
         <div class="col-md-4 col-md-offset-4">
             <section class="login-form">
-                @if (Session::has('message'))
-                    <div class="alert alert-error">{{{ Session::get('message') }}}</div>
-                @endif
                 <form method="POST" action="{{{ route("doadminlogin") }}}" role="login">
                     <h1>PYM Admin Login</h1>
+                    @if (Session::has('message'))
+                        <div class="label label-error">{{{ Session::get('message') }}}</div>
+                    @endif
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <input name="inputUserName" type="email" name="email" placeholder="User Name" required="" class="form-control input-lg">
                     <input name="inputPassword" type="password" class="form-control input-lg" id="password" placeholder="Password" required=""><ul class="error-list"></ul>

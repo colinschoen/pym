@@ -16,6 +16,9 @@ Route::get('admin/login', ["as" => "adminlogin", "uses" => 'IndexController@get_
 Route::post('admin/login', ["as" => "doadminlogin", "uses" => 'IndexController@post_admin_login']);
 Route::get('admin/hash/{string}', ["as" => "hash", "uses" => "IndexController@get_hash"]);
 
+
+Route::get('admin', ["as" => "admin", "uses" => 'IndexController@get_admin', "middleware" => "auth"]);
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
