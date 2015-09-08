@@ -282,47 +282,30 @@
 
         </div>
 
-        <footer class="footer" role="contentinfo">
-            <div id="inner-footer" class="wrap cf">
-
-                <h2>Send a Message</h2><a id="contact"></a>
-                <div class="contact-form" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
-                    <div class="screen-reader-response"></div>
-
-                    <form name="" action="/#wpcf7-f4-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="4" />
-                            <input type="hidden" name="_wpcf7_version" value="4.0.1" />
-                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1" />
-                            <input type="hidden" name="_wpnonce" value="93e84f4d39" />
-                        </div>
-
-                        <div class="contact-fieldcontainer">
-                            <label for="">Your name</label><br />
-                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your name here" /></span>
-                        </div>
-
-                        <div class="contact-fieldcontainer">
-                            <label for="">Your e-mail</label><br />
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="How can I reach you?" /></span>
-                        </div>
-
-                        <div>
-                    <span class="wpcf7-form-control-wrap your-message contact-textbox"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea contact-textarea" aria-invalid="false" placeholder="Your message or question" style="width: 677px; height: 175px;"></textarea>
-                    </span>
-                        </div>
-
-                        <p><input type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit" />
-                        </p>
-
-                        <div class="wpcf7-response-output wpcf7-display-none">
-                        </div>
-                    </form>
-                </div>
+        <div class="contact-form">
+            <div class="contact-container">
+                <h2>Send a Message</h2>
+                <form>
+                    <div class="contact-fieldcontainer">
+                        <label>Your name</label>
+                        <br>
+                        <input type="text" name="your-name" placeholder="Your name here"/>
+                    </div>
+                    <div class="contact-fieldcontainer">
+                        <label for="">Your e-mail</label>
+                        <br>
+                        <input type="email" name="your-email" placeholder="How can we reach you?"/>
+                    </div>
+                    <div class="contact-messagebox">
+                        <textarea cols="40" row="10" placeholder="Your message or question"></textarea>
+                    </div>
+                    <p>
+                        <input type="submit" value="Send Message"/>
+                    </p>
+                </form>
             </div>
+    </div>
 
-        </footer>
 
         <!-- jQuery Version 1.11.1 -->
         <script src="js/jquery.js"></script>
