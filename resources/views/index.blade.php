@@ -55,6 +55,17 @@
                     <a href="#" style="color:black;">Contact</a>
                 </li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" style="font-size: 15pt;"><i class="fa fa-facebook-official fa-fw"></i></a>
+                </li>
+                <li>
+                    <a href="#" style="font-size: 15pt"><i class="fa fa-twitter-square fa-fw"></i></a>
+                </li>
+                <li>
+                    <a href="#" style="font-size: 15pt"><i class="fa fa-linkedin-square fa-fw"></i></a>
+                </li>
+            </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
