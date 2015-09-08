@@ -48,6 +48,14 @@
                 <div id="htext" class="well">
                     <h5>Header Text:</h5>
                     <textarea id="inputHText"></textarea>
+                    <br />
+                    <h5>Header Link Text:</h5>
+                    <input type="text" class="form-control" placeholder="e.g. More Information" />
+                    <br />
+                    <h5>Header Link href:</h5>
+                    <input type="text" class="form-control" placeholder="e.g. http://google.com" />
+                    <br />
+                    <button class="btn btn-success">Save</button>
                 </div>
             </div>
         </div>
