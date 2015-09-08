@@ -51,9 +51,9 @@ font-size:100%
 }
  */
 
-    .hero {
-        font-size: 100pt; 
-        font-family: bebas;
+.hero {
+  font-size: 100pt; 
+  font-family: bebas;
 }
 
 .quoted:before {
@@ -111,13 +111,13 @@ margin-bottom: 0.375em;
 }
  */
 
-    .footer h2 {
-        font-size: 160%;
-        margin-bottom: 1em;
-        text-rendering: optimizelegibility;
-        font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
+.footer h2 {
+  font-size: 160%;
+  margin-bottom: 1em;
+  text-rendering: optimizelegibility;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 div.wpcf7 {
@@ -385,13 +385,13 @@ input[type="text"],input[type="password"],input[type="datetime"],input[type="dat
     -moz-osx-font-smoothing: auto;
   }
 
-  /* Team Section */
-  .team {
-      margin-bottom: 20px;
-      margin-top: 20px;
-      text-align: center;
-      font-family: "Josefin Sans",Molengo,Charcoal,Allerta,Cardo;
-      color: black;
+/* Team Section */
+.team {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Josefin Sans",Molengo,Charcoal,Allerta,Cardo;
+    color: black;
 }
 
 .team-img {
@@ -575,29 +575,6 @@ Class name automatically added to element */
     position: relative;
 }
 
-.section-header {
-  background-color: transparent;
-  background-image: url("../images/dark_bg.png");
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-position: 0% 0%;
-  padding: 50px 0px;
-  display: block;
-  overflow: visible;
-  width: 125%;
-  margin-left: -25%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.section-header h1 {
-  font-size: 72px;
-  color: white;
-  text-align: center;
-  margin-bottom: 15px;
-  letter-spacing: -3px;
-}
-
 /* Featured Work */
 .work-container {
   position: relative;
@@ -653,7 +630,38 @@ color: black;
   padding-right: 13px;
 }
 
-.section-header h1:before,
+/* Section Headers */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  position:absolute;
+  padding-left: 0px;
+}
+
+.section-header {
+  background-color: transparent;
+  background-image: url("../images/dark_bg.png");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  padding: 25px 0px;
+  display: block;
+  overflow: visible;
+  width: 100vw;
+  left:0;
+}
+
+.section-header h1 {
+  font-size: 72px;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: -3px;
+}
+
+
+/*.section-header h1:before,
 .section-header h1:after {
   content: "";
   position: relative;
@@ -671,4 +679,8 @@ color: black;
 .section-header h1:after {    
   left: .5em;
   margin: 0 -10% 0 0;
+}*/
+
+.fa {
+  color:white;
 }
