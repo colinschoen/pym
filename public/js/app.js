@@ -3,3 +3,5 @@ smoothScroll.init({
     easing: 'easeInOutQuad',
     });
 $('#client-scroller').simplyScroll();
+
+new WOW().init();

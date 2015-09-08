@@ -141,15 +141,15 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-md-4 center-text">
+                <div class="col-md-4 center-text wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-road fa-fw"></i></div>
                     <p><strong>Diagnosis and Strategy</strong></p>
                 </div>
-                <div class="col-md-4 center-text">
+                <div class="col-md-4 center-text wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-line-chart fa-fw"></i></div>
                     <p><strong>Coaching</strong></p>
                 </div>
-                <div class="col-md-4 center-text">
+                <div class="col-md-4 center-text wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-users fa-fw"></i></div>
                     <p><strong>Management 101</strong></p>
                 </div>
@@ -207,34 +207,35 @@
         <div class="item active">
             <div class="work-container">
                 <div class="work-inner">
-                    <img class="work-img animated fadeInRight" src="images/logos/lucas.png">
-                    <h2 class="work-text animated fadeInLeft">Lucas Films</h2>
-                    <p class="fadeInLeft">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                    <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
+                    <h2 class="work-text wow fadeInRight">Lucas Films</h2>
+                    <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
                     </p>
                 </div>
             </div>
 
-            <div class="item active">
+
+            <div class="item">
                 <div class="work-container">
                     <div class="work-inner">
-                        <img class="work-img animated fadeInRight" src="images/logos/lucas.png">
-                        <h2 class="work-text animated fadeInLeft">Lucas Films</h2>
-                        <p class="fadeInLeft">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                        <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
+                        <h2 class="work-text wow fadeInRight">Lucas Films</h2>
+                        <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
                         </p>
                     </div>
                 </div>
+            </div>
 
-                <div class="item active">
-                    <div class="work-container">
-                        <div class="work-inner">
-                            <img class="work-img animated fadeInRight" src="images/logos/lucas.png">
-                            <h2 class="work-text animated fadeInLeft">Lucas Films</h2>
-                            <p class="fadeInLeft">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
-                            </p>
-                        </div>
+            <div class="item">
+                <div class="work-container">
+                    <div class="work-inner">
+                        <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
+                        <h2 class="work-text wow fadeInRight">Lucas Films</h2>
+                        <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                        </p>
                     </div>
-
                 </div>
+            </div>
 
                 <div class="section-header">
                     <h1>
@@ -331,6 +332,8 @@
         <script src="js/smooth-scroll.js"></script>
         <!-- Simply Scroll -->
         <script src="js/simplyScroll.js"></script>
+        <!-- Wow JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <!-- Application Javascirpt -->
         <script src="js/app.js"></script>
 </body>
