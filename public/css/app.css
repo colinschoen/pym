@@ -16,6 +16,11 @@
 
 nav.navbar.navbar-fixed-top {
     background-color: #FFF;
+    padding-left: 20px;
+}
+
+.navbar-right {
+  padding-right: 20px;
 }
 
 .client-li {
@@ -67,6 +72,7 @@ font-size:100%
 }
 .center-text {
     text-align: center;
+    margin: 50px 0px;
 }
 
 .footer {
@@ -425,8 +431,9 @@ Class name automatically added to element */
     padding-bottom: 40px;
     overflow: hidden;
     margin: auto;
-    max-width: 160rem;
+    max-width: 150rem;
     width: 100%;
+    padding-left: 250px;
 }
 
 .about h2 {
@@ -488,47 +495,48 @@ Class name automatically added to element */
 
 /* Featured Work */
 .work-container {
-  position: relative;
-width: 736px;
-margin: 0px auto;
-padding: 0px;
-font-family: "Open Sans",sans-serif;
-font-size: 17px;
-line-height: 1.45;
-font-weight: 300;
-font-weight: normal;
-font-style: normal;
-list-style: outside none none;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 300;
+  font-weight: normal;
+  font-style: normal;
 }
 
-.work-inner {
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
-  position: relative;
-}
+.work-item {
+  width: 80%;
+  height:10%;
+  margin: 20px 50px auto;
 
-.work-img {
-  margin-top: 0px;
-  margin-bottom: 35px;
-  margin-right: 0px;
-  margin-left: 10px;
-  width: 164px;
 }
 
 .work-text {
-  width: 532px;
-  margin-left: 0px;
-  margin-right: 10px;
-  float: right;
-  display: inline;
+  width: 50%;
+  float: left;
+}
+
+.work-img {
+  max-width: 20%;
+  display: inline-block;
+  float: left;
+  margin-left: 300px;
+  padding-right: 50px;
+}
+
+.work-img img {
+  max-width: 100%;
+  margin: 60px 0px;
 }
 
 .work-text h2 {
   font-family: "Vollkorn",serif;
-line-height: 1.2;
-font-size: 36px;
-margin: 20px 0px;
-color: black;
+  line-height: 1.2;
+  font-size: 36px;
+  margin: 20px 0px;
+  color: black;
 }
 
 .work-text p {
@@ -536,9 +544,8 @@ color: black;
   font-size: 17px;
   line-height: 1.45;
   font-weight: 300;
-  margin: 20px 0px 40px;
+  margin: 20px 0px;
   color: #444;
-  padding-right: 13px;
 }
 
 /* Section Headers */

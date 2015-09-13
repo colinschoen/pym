@@ -133,7 +133,7 @@
     <div class="row">
         <div class="col-lg-12 about">
             <h2> We are a team of sons, fathers,
-                and husbands that can quick empathize and understand others.
+                and husbands that can quickly empathize and understand others.
             </h2>
             <p>
                 Our about text will go here. This is where we could talk about who we are and what exactly it is that we do. Our about text will go here. This is where we could talk about who we are and what exactly it is that we do.
@@ -167,6 +167,21 @@
             </div>
         </div>
     </div>
+
+    <!-- <div class="row">
+                  
+            <div class="col-lg-4" >
+                <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
+            </div>
+
+            <div class="col-lg-8">
+                <h2 class="work-text wow fadeInRight">Lucas Films</h2>
+                <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                </p>
+            </div>
+
+        </div>
+ -->
     <!--         <div class="row">
         <div class="col-lg-12">
             <h2>About</h2>
@@ -214,39 +229,75 @@
         </h1>
     </div>
 
-    <div class="row">
-        <div class="item active">
-            <div class="work-container">
-                <div class="work-inner">
+    <div class="work-container">
+<!--         
+        <div class="row">
+
+            <div class="work-item">
+                  
+                <div class="col-md-2" >
                     <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
+                </div>
+
+                <div class="col-md-6">
                     <h2 class="work-text wow fadeInRight">Lucas Films</h2>
                     <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
                     </p>
                 </div>
+
             </div>
 
+        </div> -->
 
-            <div class="item">
-                <div class="work-container">
-                    <div class="work-inner">
-                        <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
-                        <h2 class="work-text wow fadeInRight">Lucas Films</h2>
-                        <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
-                        </p>
-                    </div>
+        <div class="row">
+
+            <div class="work-item">
+                <div class="work-img">  
+                    <img class="wow fadeInLeft" src="images/logos/lucas.png">
+                </div>   
+
+                <div class="work-text">
+                    <h2 class="wow fadeInRight">Lucas Films</h2>
+                    <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="work-item">
+                <div class="work-img">  
+                    <img class="wow fadeInLeft" src="images/logos/lucas.png">
+                </div>   
+
+                <div class="work-text">
+                    <h2 class="wow fadeInRight">Lucas Films</h2>
+                    <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="work-item">
+                <div class="work-img">  
+                    <img class="wow fadeInLeft" src="images/logos/lucas.png">
+                </div>   
+
+                <div class="work-text">
+                    <h2 class="wow fadeInRight">Lucas Films</h2>
+                    <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <div class="item">
-                <div class="work-container">
-                    <div class="work-inner">
-                        <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
-                        <h2 class="work-text wow fadeInRight">Lucas Films</h2>
-                        <p class="wow fadeInRight">Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did. Hello this is a description about the project we did.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    </div>
 
                 <div class="section-header">
                     <h1>
@@ -257,6 +308,7 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-lg-4 team">
                         <a href="images/team2.jpg" data-toggle="lightbox">
                             <div class="overlay">
@@ -287,11 +339,8 @@
                         </a>
                     </div>
 
-
                 </div>
-            </div>
 
-        </div>
 
         <div class="contact-form">
             <div class="contact-container">
