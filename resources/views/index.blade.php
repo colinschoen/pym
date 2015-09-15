@@ -156,14 +156,14 @@
                     <div class="large-icon"><i class="fa fa-road fa-fw"></i></div>
                     <p><strong>Diagnosis and Strategy</strong></p>
                 </div></a>
-                <div class="col-md-4 center-text coachModalBtn wow fadeInUp">
+                <a id="coachModalBtn" href="#"><div class="col-md-4 center-text coachModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-line-chart fa-fw"></i></div>
                     <p><strong>Coaching</strong></p>
-                </div>
-                <div class="col-md-4 center-text manageModalBtn wow fadeInUp">
+                </div></a>
+                <a href="manageModalBtn"><div class="col-md-4 center-text manageModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-users fa-fw"></i></div>
                     <p><strong>Management 101</strong></p>
-                </div>
+                </div></a>
             </div>
         </div>
     </div>
@@ -372,10 +372,48 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
+            <h4 class="modal-title">Diagnosis and Strategy</h4>
           </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+            <p>Some text in here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="coachModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Coaching</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="manageModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Management 101</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in here.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

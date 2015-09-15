@@ -9,4 +9,14 @@ $('#diagModalBtn').on('click', function(e) {
     $('#diagModal').modal();
 });
 
+$('#coachModalBtn').on('click', function(e) {
+    e.preventDefault();
+    $('#coachModal').modal();
+});
+
+$('#manageModalBtn').on('click', function(e) {
+    e.preventDefault();
+    $('#manageModal').modal();
+});
+
 new WOW().init();
