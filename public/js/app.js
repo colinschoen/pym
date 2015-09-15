@@ -5,6 +5,7 @@ smoothScroll.init({
 $('#client-scroller').simplyScroll();
 
 $('#diagModalBtn').on('click', function() {
+    alert("launch modal");
     $('#diagModal').modal();
 });
 
