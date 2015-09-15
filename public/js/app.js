@@ -4,8 +4,8 @@ smoothScroll.init({
     });
 $('#client-scroller').simplyScroll();
 
-$('#diagModalBtn').on('click', function() {
-    alert("launch modal");
+$('#diagModalBtn').on('click', function(e) {
+    e.preventDefault();
     $('#diagModal').modal();
 });
 
