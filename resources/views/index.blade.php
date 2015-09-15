@@ -152,7 +152,7 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal">
+                <div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal" id="diagModalBtn">
                     <div class="large-icon"><i class="fa fa-road fa-fw"></i></div>
                     <p><strong>Diagnosis and Strategy</strong></p>
                 </div>
