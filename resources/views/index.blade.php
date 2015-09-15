@@ -152,15 +152,15 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-                <a id="diagModalBtn" href="#"><div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal">
+                <a id="diagModalBtn" class="serviceModalBtn" href="#"><div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal">
                     <div class="large-icon"><i class="fa fa-road fa-fw"></i></div>
                     <p><strong>Diagnosis and Strategy</strong></p>
                 </div></a>
-                <a id="coachModalBtn" href="#"><div class="col-md-4 center-text coachModalBtn wow fadeInUp">
+                <a id="coachModalBtn" href="#" class="serviceModalBtn"><div class="col-md-4 center-text coachModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-line-chart fa-fw"></i></div>
                     <p><strong>Coaching</strong></p>
                 </div></a>
-                <a id="manageModalBtn" href="#"><div class="col-md-4 center-text manageModalBtn wow fadeInUp">
+                <a id="manageModalBtn" href="#" class="serviceModalBtn"><div class="col-md-4 center-text manageModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-users fa-fw"></i></div>
                     <p><strong>Management 101</strong></p>
                 </div></a>
