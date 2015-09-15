@@ -152,10 +152,10 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-                <button id="diagModalBtn" href="#"><div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal">
+                <a id="diagModalBtn" href="#"><div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal">
                     <div class="large-icon"><i class="fa fa-road fa-fw"></i></div>
                     <p><strong>Diagnosis and Strategy</strong></p>
-                </div></button>
+                </div></a>
                 <div class="col-md-4 center-text coachModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-line-chart fa-fw"></i></div>
                     <p><strong>Coaching</strong></p>
@@ -366,21 +366,24 @@
             </div>
     </div>
 
-    <div class="md-modal md-effect-8" id="diagModal">
-        <div class="md-content">
-            <h3>Modal Dialog</h3>
-            <div>
-                <p>This is a modal window. You can do the following things with it:</p>
-                <ul>
-                    <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li>
-                    <li><strong>Look:</strong> modal windows enjoy a certain kind of attention; just look at it and appreciate its presence.</li>
-                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                </ul>
-                <button class="md-close">Close me!</button>
-            </div>
+    <div id="diagModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
+
+      </div>
     </div>
-<div class="md-overlay"></div>
 
         <!-- jQuery Version 1.11.1 -->
         <script src="js/jquery.js"></script>
