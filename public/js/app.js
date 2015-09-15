@@ -4,4 +4,8 @@ smoothScroll.init({
     });
 $('#client-scroller').simplyScroll();
 
+$('#diagModalBtn').on('click', function() {
+    $('#diagModal').modal();
+});
+
 new WOW().init();
