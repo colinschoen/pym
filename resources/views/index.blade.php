@@ -160,7 +160,7 @@
                     <div class="large-icon"><i class="fa fa-line-chart fa-fw"></i></div>
                     <p><strong>Coaching</strong></p>
                 </div></a>
-                <a href="manageModalBtn"><div class="col-md-4 center-text manageModalBtn wow fadeInUp">
+                <a id="manageModalBtn" href="#"><div class="col-md-4 center-text manageModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-users fa-fw"></i></div>
                     <p><strong>Management 101</strong></p>
                 </div></a>
