@@ -152,15 +152,15 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-md-4 center-text wow fadeInUp">
+                <div class="col-md-4 center-text diagModalBtn wow fadeInUp" data-modal="diagModal">
                     <div class="large-icon"><i class="fa fa-road fa-fw"></i></div>
                     <p><strong>Diagnosis and Strategy</strong></p>
                 </div>
-                <div class="col-md-4 center-text wow fadeInUp">
+                <div class="col-md-4 center-text coachModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-line-chart fa-fw"></i></div>
                     <p><strong>Coaching</strong></p>
                 </div>
-                <div class="col-md-4 center-text wow fadeInUp">
+                <div class="col-md-4 center-text manageModalBtn wow fadeInUp">
                     <div class="large-icon"><i class="fa fa-users fa-fw"></i></div>
                     <p><strong>Management 101</strong></p>
                 </div>
@@ -169,7 +169,7 @@
     </div>
 
     <!-- <div class="row">
-                  
+
             <div class="col-lg-4" >
                 <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
             </div>
@@ -234,7 +234,7 @@
         <div class="row">
 
             <div class="work-item">
-                  
+
                 <div class="col-md-2" >
                     <img class="work-img wow fadeInLeft" src="images/logos/lucas.png">
                 </div>
@@ -366,6 +366,21 @@
             </div>
     </div>
 
+    <div class="md-modal md-effect-8" id="diagModal">
+        <div class="md-content">
+            <h3>Modal Dialog</h3>
+            <div>
+                <p>This is a modal window. You can do the following things with it:</p>
+                <ul>
+                    <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li>
+                    <li><strong>Look:</strong> modal windows enjoy a certain kind of attention; just look at it and appreciate its presence.</li>
+                    <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                </ul>
+                <button class="md-close">Close me!</button>
+            </div>
+        </div>
+    </div>
+<div class="md-overlay"></div>
 
         <!-- jQuery Version 1.11.1 -->
         <script src="js/jquery.js"></script>
@@ -377,6 +392,7 @@
         <script src="js/simplyScroll.js"></script>
         <!-- Wow JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="js/modalEffects.js"></script>
         <!-- Application Javascirpt -->
         <script src="js/app.js"></script>
 </body>
