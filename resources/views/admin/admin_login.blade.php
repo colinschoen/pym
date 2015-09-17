@@ -86,7 +86,7 @@
                         <div class="label label-error">{{{ Session::get('message') }}}</div>
                     @endif
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                    <input name="inputUserName" type="email" name="email" placeholder="User Name" required="" class="form-control input-lg">
+                    <input name="inputUserName" type="text" placeholder="User Name" required="" class="form-control input-lg">
                     <input name="inputPassword" type="password" class="form-control input-lg" id="password" placeholder="Password" required=""><ul class="error-list"></ul>
                     <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Sign in</button>
                 </form>
