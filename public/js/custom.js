@@ -1,4 +1,78 @@
 $(document).ready(function () {
+
+    /***************** Video popups ******************/
+    $('.magnific').magnificPopup({
+    type:'image',
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
+  });
+
+  $('.magnific-youtube').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 300,
+    preloader: false,
+    fixedContentPos: false,
+    items: {
+         src: 'https://www.youtube.com/watch?v=OuIwRg8BkqY'
+       },
+   iframe: {
+         markup: '<div class="mfp-iframe-scaler">'+
+                 '<div class="mfp-close"></div>'+
+                 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                 '</div>',
+         patterns: {
+             youtube: {
+                 index: 'youtube.com/',
+                 id: 'v=',
+                 src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+             }
+          },
+          srcAction: 'iframe_src',
+      }
+  });
+
+$('.magnific-all').each(function() {
+  var $container = $(this);
+  var $imageLinks = $container.find('.item');
+
+  var items = [];
+  $imageLinks.each(function() {
+    var $item = $(this);
+    var type = 'image';
+    if ($item.hasClass('magnific-youtube')) {
+      type = 'iframe';
+    }
+    var magItem = {
+      src: $item.attr('href'),
+      type: type
+    };
+    magItem.title = $item.data('title');
+    items.push(magItem);
+    });
+
+  $imageLinks.magnificPopup({
+    mainClass: 'mfp-fade',
+    items: items,
+    gallery:{
+        enabled:true,
+        tPrev: $(this).data('prev-text'),
+        tNext: $(this).data('next-text')
+    },
+    type: 'image',
+    callbacks: {
+      beforeOpen: function() {
+        var index = $imageLinks.index(this.st.el);
+        if (-1 !== index) {
+          this.goTo(index);
+        }
+      }
+    }
+  });
+});
+
+
     /***************** Navbar-Collapse ******************/
 
     $(window).scroll(function () {
@@ -34,10 +108,10 @@ $(document).ready(function () {
 
         navigation: false, // Show next and prev buttons
         slideSpeed: 300,
-        paginationSpeed: 800,
+        paginationSpeed: 200,
         singleItem: true,
         transitionStyle: "fade",
-        autoPlay: false,
+        autoPlay: true,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
 
     });
@@ -57,9 +131,9 @@ $(document).ready(function () {
     $("#owl-testi").owlCarousel({
 
         navigation: false, // Show next and prev buttons
-        paginationSpeed: 400,
+        paginationSpeed: 700,
         singleItem: true,
-        transitionStyle: "backSlide",
+        transitionStyle: "fadeUp",
         autoPlay: true
 
     });

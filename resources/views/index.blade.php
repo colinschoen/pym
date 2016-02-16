@@ -21,6 +21,8 @@
     <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
     <link href="plugins/animate.css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
     <!-- Icons Font -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -49,7 +51,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- <a class="navbar-brand" href="#"><img src="http://placehold.it/66x66" class="img-responsive" alt="logo"></a> -->
-                <a class="navbar-brand" href="#" style="font-size:3vw; margin-top:25px;">PYM</a>
             </div>
             <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                 <div class="col-md-8 col-xs-12 nav-wrap">
@@ -74,20 +75,22 @@
     <div id="owl-hero" class="owl-carousel owl-theme">
         <div class="item" style="background-color: black">
             <div class="caption">
-                <h1><span>Riverene Leadership</span></h1>
-                <h5 style="padding-bottom:5%; color: white;">Building the next generation of effective leaders<h5>
-                        <a class="btn btn-transparent" href="#">Explore</a>
+                <img src="img/logo/logo.png" style="width:20%; height:20%">
+                <h1><span>{{{ $data["h1Text"] }}}</span></h1>
+                <h5 style="padding-bottom:5%; color: white;">{{{ $data["h1SubText"] }}}<h5>
             </div>
         </div>
         <div class="item" style="background-color: black">
             <div class="caption">
-                <h1>Headline 1</h1>
+                <h1>{{{ $data["h2Text"] }}}</h1>
+                <h5 style="padding-bottom:5%; color: white;">{{{ $data["h2SubText"] }}}<h5>
             </div>
         </div>
         <!-- <div class="item" style="background-image: url(img/sliders/Slide3.jpg)"> -->
         <div class="item" style="background-color: black">
             <div class="caption">
-                <h1>Headline 2</h1>
+                <h1>{{{ $data["h3Text"] }}}</h1>
+                <h5 style="padding-bottom:5%; color: white;">{{{ $data["h3SubText"] }}}<h5>
             </div>
         </div>
     </div>
@@ -96,9 +99,9 @@
 <!-- Welcome -->
 <section id="welcome">
     <div class="container">
-        <h2>Achieving <span>Breakthroughs</span></h2>
+        <h2>{{{ $data["breakoutHeader"] }}}</h2>
         <hr class="sep">
-        <h4 style="text-align:justify; letter-spacing: 1px; line-height: 60px">Riverene provides exceptional leadership and organizational development training for employees at all levels. We provide the tools and solutions that align organizational culture with business strategy to maximize productivity and engagement. Bringing together the art and science of leadership, our programs inspire break through results.<h4>
+        <h4 style="text-align:justify; letter-spacing: 1px; line-height: 60px">{{{ $data["breakoutText"] }}}<h4>
     </div>
 </section>
 
@@ -112,32 +115,29 @@
 <!-- Work Process -->
 <section id="work-process">
     <div class="services-container">
-
-        <div>
-            <div class="col-lg-3">
-                <a class="btn" data-toggle="modal" data-target="#myModal1">
-                    <span class="fa fa-users fa-2x"></span>
-                    <h2>1.Team<br>Building</h2>
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a class="btn" data-toggle="modal" data-target="#myModal2">
-                    <span class="fa fa-unlock fa-2x"></span>
-                    <h2>2.Adaptive <br>Leadership</h2>
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a class="btn" data-toggle="modal" data-target="#myModal3">
-                    <span class="fa fa-trophy fa-2x"></span>
-                    <h2>3.Leadership<br>Coaching</h2>
-                </a>
-            </div>
-            <div class="col-lg-3">
-                <a class="btn" data-toggle="modal" data-target="#myModal4">
-                    <span class="fa fa-search fa-2x"></span>
-                    <h2>4.Diagnosis &<br>Strategy</h2>
-                </a>
-            </div>
+        <div class="col-lg-3">
+            <a class="btn" data-toggle="modal" data-target="#myModal1">
+                <span class="fa fa-line-chart fa-2x"></span>
+                <h2>1.{{{ $data["service1"] }}}</h2>
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a class="btn" data-toggle="modal" data-target="#myModal2">
+                <span class="fa fa-unlock fa-2x"></span>
+                <h2>2.{{{ $data["service2"] }}}</h2>
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a class="btn" data-toggle="modal" data-target="#myModal3">
+                <span class="fa fa-trophy fa-2x"></span>
+                <h2>3.{{{ $data["service3"] }}}</h2>
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <a class="btn" data-toggle="modal" data-target="#myModal4">
+                <span class="fa fa-search fa-2x"></span>
+                <h2>4.{{{ $data["service4"] }}}</h2>
+            </a>
         </div>
     </div>
 </section>
@@ -151,8 +151,9 @@
 
                 <div class="modal-left"></div>
                 <div class="modal-right">
-                    <div class="modal-title" id="ModalLabel1">This is the Title</div>
-                    <div class="modal-text" id="ModalText1">This is the text for my modal.</div>
+                    <div class="modal-title" id="ModalLabel1">Achieving Breakthroughs </div>
+                    <h2>Based upon the research in Judah’s book, <i>The Breakthrough Myth</i>, this program helps your leaders and teams have big, game changing breakthroughs.</h2>
+                    <div class="modal-text" id="ModalText1">We leverage the best tools from the biggest innovators to help your leaders and teams have high impact breakthroughs. Rather than talk about geniuses and their special processes this program offers specific, concrete tools for individuals and teams to use immediately to increase their chances of breaking through whatever may have been blocking them. By assessing the members of your team we customize the tools to be most effective for your people. </div>
                 </div>
             </div>
         </div>
@@ -166,8 +167,10 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left"></div>
                 <div class="modal-right">
-                    <div class="modal-title" id="ModalLabel2">This is the Title</div>
-                    <div class="modal-text" id="ModalText2">This is the text for my modal.</div>
+                    <div class="modal-title" id="ModalLabel2">Adaptive Leadership Training </div>
+                    <h2>The most important leadership commodity in any organization is trust. It takes years to build and a moment to break.</h2>
+                    <div class="modal-text" id="ModalText2">We are experts at rapidly establishing trust with our clients and helping them establish trust with their peers. Our trainings, designed using the latest findings in neuroscience, are 90 minutes, short enough to be digestible for your staff and integrate into their workday and be immediately applicable to their daily job. Our process is simple, the first 15 minutes we set the frame for the new knowledge. The next 45 minutes we teach one concrete tool and practice using that tool to make the knowledge immediately impactful. The final 30 minutes is devoted to the group identifying the challenges inherent in their system and using the tool to collaboratively design solutions to preempt them.
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,8 +184,9 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left"></div>
                 <div class="modal-right">
-                    <div class="modal-title" id="ModalLabel3">This is the Title</div>
-                    <div class="modal-text" id="ModalText3">This is the text for my modal.</div>
+                    <div class="modal-title" id="ModalLabel3">Coaching</div>
+                    <h2>When you coach a leader you are by extension coaching their team.</h2>
+                    <div class="modal-text" id="ModalText3">So, we have found in-the-moment data collection on leader/team dynamics to be an incomparably rich foundation for effective coaching of leaders and their teams. With this high-impact approach, we observe leaders and their teams interacting in their regularly scheduled weekly business meetings, we give real-time feedback to the team and follow-up with 1:1 developmental coaching sessions with the leader. Through a 3 to 12 month engagement that includes targeted leader coaching, as well as spot coaching for team members, plus the design and facilitation of quarterly off-sites, expect dramatic—even exponential—improvement in the effectiveness and satisfaction of leaders, their teams, and the whole organization.</div>
                 </div>
             </div>
         </div>
@@ -196,34 +200,14 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left"></div>
                 <div class="modal-right">
-                    <div class="modal-title" id="ModalLabel4">This is the Title</div>
-                    <div class="modal-text" id="ModalText4">This is the text for my modal.</div>
+                    <div class="modal-title" id="ModalLabel4">Diagnosing Your Organization </div>
+                    <h2>If you want to get to where you’re going, you first need to know where you really are.</h2>
+                    <div class="modal-text" id="ModalText4">We skillfully and productively surface the unspoken conflicts and misalignments in and across teams that are getting in the company’s way. We discover what the concrete, day-to-day blockers are to the organization’s mission and goals. Then we drill down to the underlying patterns to find the essential issues and present these to the executive team. Based upon this information we advise executive teams on how to build and maintain the company culture that will best move the organization forward.</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-<!-- Portfolio -->
-<section id="portfolio">
-    <div class="container-fluid">
-        <!-- <h2>Our Work</h2> -->
-        <!-- <hr class="sep"> -->
-        <div class="row">
-            <div class="col-lg-4 col-sm-12 videos">
-                <iframe width="80%" height="400px" src="https://www.youtube.com/embed/OfTCW-IV8tg?rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="col-lg-4 col-sm-12 videos">
-                <iframe width="80%" height="400px" src="https://www.youtube.com/embed/2Ppt3qXJW_Q?rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="col-lg-4 col-sm-12 videos">
-                <iframe width="80%" height="400px" src="https://www.youtube.com/embed/OuIwRg8BkqY?rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Facts -->
 <section id="fun-facts">
@@ -235,38 +219,74 @@
 <!-- Fun Facts -->
 <section id="team">
     <div class="team-container">
-        <div>
-            <div class="col-md-4">
-                <div class="team">
-                    <img class="img-responsive center-block team-photo" src="img/team/judah.png" alt="1">
-                    <img class="img-responsive center-block team-photo" src="img/team/allan.png" alt="2">
-                    <img class="img-responsive center-block team-photo" src="img/team/dov.png" alt="3">
+        <div class="team team-description">
+
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <section class="magnific-all">
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-1.jpg" class="magnific item" data-title="item 1">
+                            <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage1"] }}}" alt="1">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=pzot1TWuutY" class="magnific-youtube item" data-title="item 2"></a>
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-3.jpg" class="magnific item" data-title="item 3"></a>
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-4.jpg" class="magnific item" data-title="item 4"></a>
+                    </section>
+                </div>
+
+                <div class="col-md-8">
+                    <div class='team-description team-row'>
+                        <h3>{{{ $data["teamName1"] }}}</h3>
+                        <p> {{{ $data["teamBioText1"] }}}</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-8">
-                <div class="team-description">
-                    <h3>Judah Pollack</h3>
-                    <p> is a writer, speaker and coach specializing in the art of leadership in a rapidly changing world. He has been working with Jungian psychology and the concepts of type, archetype and soul to create more self aware leaders. He has worked with the US Army, Google, The New York Times, and Startx of Stanford University and is a regular lecturer at Haas School of Business. He is the co-author of The Chaos Imperative, released this August from Random House. The book is about how the complexity in disorder can help with innovation. He is currently working on a book for Penguin, working title, Wiring the Breakthrough Brain. His co-author is Olivia Fox Cabane, author of The Charisma Myth. In the new book we are exploring how systems and organizations can be more innovative. After studying the insight machinery of the brain we are looking to see if it is possible to biomimic the brains design in our organizations both formally and informally.</p>
+
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <section class="magnific-all">
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-1.jpg" class="magnific item" data-title="item 1">
+                            <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage2"] }}}" alt="1">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=pzot1TWuutY" class="magnific-youtube item" data-title="item 2"></a>
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-3.jpg" class="magnific item" data-title="item 3"></a>
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-4.jpg" class="magnific item" data-title="item 4"></a>
+                    </section>
                 </div>
 
-                <div class="team-description">
-                    <h3>Allan Silva</h3>
-                    <p>for the past twelve years Allan has been providing organizational development, leadership development and executive coaching to rapid growth organizations. With his breadth of expertise in systems and cultures, Allan knows how to influence on several levels at once to accelerate change initiatives to their tipping point. He holds graduate degrees in clinical psychology and neuroscience, and draws upon his executive experience to coach leaders, facilitate enterprise-wide change, and design cultures that learn, adapt, and innovate. Allan has consulted to many companies who stake their brand on innovation including Google and Lucasfilm.</p>
-                </div>
-
-                <div class="team-description">
-                    <h3>Dov Pollack</h3>
-                    <p>an expert transformational change executive with a history of building social networks of learning within organizations through the development of more effective leadership, greater trust, and increased performance. Dov believes passionately that how people work together in organizations will determine the future of the planet. Most recently Dov led the management of multiple projects to support the successful implementation of a new nationally recognized Accountable Care Organization (ACO). The ACO covers 40,000 members and was a partnership of Northern California's largest Independent Physician Association, third largest Health Plan, and largest not-for-profit hospital chain. </p>
+                <div class="col-md-8">
+                    <div class='team-description team-row'>
+                        <h3>{{{ $data["teamName2"] }}}</h3>
+                        <p>{{{ $data["teamBioText2"] }}}</p>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <section class="magnific-all">
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-1.jpg" class="magnific item" data-title="item 1">
+                            <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage3"] }}}" alt="1">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=pzot1TWuutY" class="magnific-youtube item" data-title="item 2"></a>
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-3.jpg" class="magnific item" data-title="item 3"></a>
+                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-4.jpg" class="magnific item" data-title="item 4"></a>
+                    </section>
+                </div>
+
+                <div class="col-md-8">
+                    <div class='team-description team-row'>
+                        <h3>{{{ $data["teamName3"] }}}</h3>
+                        <p>{{{ $data["teamBioText3"] }}}</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
-
 <!-- Testimonials -->
-
-<!-- Services -->
 <section id="services">
     <div class="container">
         <h1>Our Testimonials</h1>
@@ -279,20 +299,20 @@
             <div class="item">
                 <div class="quote">
                     <i class="fa fa-quote-left left fa-2x"></i>
-                    <h5><span>Riverene</span> brings a unique style of training that is unanimously well received by our organization. The understanding of subject knowledge, blended with an enthusiasm that compares to none, <span>Riverene</span> consistently delivers leadership sessions that engage participants. <span>Riverene Leadership Institute</span> conducted many leadership sessions for Hill Physicians Medical Group, including conflict management, communication styles, motivation and coaching. Dov is the first person we call when we need help.<i class="fa fa-quote-right right fa-2x"></i></h5>
+                    <h5>{{{ $data["testimonial1"] }}}</h5>
                 </div>
             </div>
             <div class="item">
                 <div class="quote">
                     <i class="fa fa-quote-left left fa-2x"></i>
-                    <h5>Leveraging their understanding of our culture, Dov Pollack, Allan Silva, and Judah Pollack were pivotal in creating a custom, dynamic training to maintain morale and individual commitment as our business transitioned to San Diego. The combination of their varied personalities, backgrounds and communication styles encouraged dialogue, focus and, most of all, continued engagement by all. We couldn’t have been happier<i class="fa fa-quote-right right fa-2x"></i></h5>
+                    <h5>{{{ $data["testimonial2"] }}}</h5>
 
                 </div>
             </div>
             <div class="item">
                 <div class="quote">
                     <i class="fa fa-quote-left left fa-2x"></i>
-                    <h5><span>Riverene</span> took a group of independent, extroverted leaders who were all used to being in charge and taught them how to work together as a team. It’s especially hard for successful people to change their behavior and adjust to new roles and circumstances, but Riverene showed them the way. Allan, Dov and Judah are each superb facilitators. But, as a team, they have a magic together that transformed our board of executives<i class="fa fa-quote-right right fa-2x"></i></h5>
+                    <h5>{{{ $data["testimonial3"] }}}</h5>
 
                 </div>
             </div>
@@ -403,9 +423,11 @@
 <script src="plugins/inview/jquery.inview.min.js"></script>
 <script src="plugins/Lightbox/dist/js/lightbox.min.js"></script>
 <script src="plugins/WOW/dist/wow.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 
 <!-- class="wow fadeInLeft" data-wow-delay=".3s"  -->
 
 </body>
 
 </html>
+

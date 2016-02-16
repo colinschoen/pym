@@ -22,7 +22,11 @@ class IndexController extends Controller {
 	public function get_index()
 	{
 		$content = Content::all();
-		return view('index')->with(["content" => $content]);
+		$data = array();
+		foreach ($content as $c) {
+			$data[$c->name] = $c->content;
+		}
+		return view('index')->with(["data" => $data]);
 	}
 
 
@@ -34,6 +38,15 @@ class IndexController extends Controller {
 		return view("admin.admin_login");
 	}
 
+
+	/**
+	 * Show the application login page
+	 * @return Response
+	 */
+	public function get_admin_logout() {
+		Auth::logout();
+		return redirect()->route("index");
+	}
 
 	/**
 	 * Process an application login request
@@ -65,26 +78,148 @@ class IndexController extends Controller {
 	 */
 	public function get_admin()
 	{
-		//Get our content
-		$content = Content::orderBy("name");
-		return view('admin.admin')->with(["content" => $content]);
+
+		$content = Content::all();
+		$data = array();
+		foreach ($content as $c) {
+			$data[$c->name] = $c->content;
+		}
+		return view('admin.admin')->with(["data" => $data]);
 	}
 
-	/**
-	 * Update content value
-	 * @return String
-	 */
-	public function post_update_content() {
-		//Get our content id
-		$cid = Request::input("inputCid");
-		$cvalue = Request::input("inputContent");
-		//Ensure that this is a valid id
-		$content = Content::findOrFail($cvalue);
-		$content->value = $cvalue;
-		//Update our model
-		$content->save();
-	}
+	public function post_admin_save_h1(){
+		$linkText = Request::input('inputText');
+		$linkSubText = Request::input('inputSubText');
+		$lt = Content::firstOrCreate(["name" => "h1Text"]);
+		$lt->content = $linkText;
+		$lt->save();
 
+		$lst = Content::firstOrCreate(["name" => "h1SubText"]);
+		$lst->content = $linkSubText;
+		$lst->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+	}
+	public function post_admin_save_h2(){
+		$linkText = Request::input('inputText');
+		$linkSubText = Request::input('inputSubText');
+
+		$lt = Content::firstOrCreate(["name" => "h2Text"]);
+		$lt->content = $linkText;
+		$lt->save();
+
+		$lst = Content::firstOrCreate(["name" => "h2SubText"]);
+		$lst->content = $linkSubText;
+		$lst->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+
+	}
+	public function post_admin_save_h3(){
+		$linkText = Request::input('inputText');
+		$linkSubText = Request::input('inputSubText');
+
+		$lt = Content::firstOrCreate(["name" => "h3Text"]);
+		$lt->content = $linkText;
+		$lt->save();
+
+		$lst = Content::firstOrCreate(["name" => "h3SubText"]);
+		$lst->content = $linkSubText;
+		$lst->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+
+	}
+	public function post_admin_save_btext(){
+		$breakoutHeader = Request::input('inputBreakoutHeader');
+		$breakoutText = Request::input('inputBreakoutText');
+		$bh = Content::firstOrCreate(["name" => "breakoutHeader"]);
+		$bh->content = $breakoutHeader;
+		$bh->save();
+		$bt = Content::firstOrCreate(["name" => "breakoutText"]);
+		$bt->content = $breakoutText;
+		$bt->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+
+	}
+	public function post_admin_save_services(){
+		$service1 = Request::input('inputService1');
+		$service2 = Request::input('inputService2');
+		$service3 = Request::input('inputService3');
+		$service4 = Request::input('inputService4');
+		$s1 = Content::firstOrCreate(["name" => "service1"]);
+		$s1->content = $service1;
+		$s1->save();
+		$s2 = Content::firstOrCreate(["name" => "service2"]);
+		$s2->content = $service2;
+		$s2->save();
+		$s3 = Content::firstOrCreate(["name" => "service3"]);
+		$s3->content = $service3;
+		$s3->save();
+		$s4 = Content::firstOrCreate(["name" => "service4"]);
+		$s4->content = $service4;
+		$s4->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+	}
+	public function post_admin_save_team(){
+		$teamName1 = Request::input('inputTeamName1');
+		$teamName2 = Request::input('inputTeamName2');
+		$teamName3 = Request::input('inputTeamName3');
+
+		$teamImage1 = Request::input('inputTeamImage1');
+		$teamImage2 = Request::input('inputTeamImage2');
+		$teamImage3 = Request::input('inputTeamImage3');
+
+		$teamBioText1 = Request::input('inputTeamBioText1');
+		$teamBioText2 = Request::input('inputTeamBioText2');
+		$teamBioText3 = Request::input('inputTeamBioText3');
+
+		$tn1 = Content::firstOrCreate(["name" => "teamName1"]);
+		$tn1->content = $teamName1;
+		$tn1->save();
+		$tn2 = Content::firstOrCreate(["name" => "teamName2"]);
+		$tn2->content = $teamName2;
+		$tn2->save();
+		$tn3 = Content::firstOrCreate(["name" => "teamName3"]);
+		$tn3->content = $teamName3;
+		$tn3->save();
+
+		$ti1 = Content::firstOrCreate(["name" => "teamImage1"]);
+		$ti1->content = $teamImage1;
+		$ti1->save();
+		$ti2 = Content::firstOrCreate(["name" => "teamImage2"]);
+		$ti2->content = $teamImage2;
+		$ti2->save();
+		$ti3 = Content::firstOrCreate(["name" => "teamImage3"]);
+		$ti3->content = $teamImage3;
+		$ti3->save();
+
+		$bt1 = Content::firstOrCreate(["name" => "teamBioText1"]);
+		$bt1->content = $teamBioText1;
+		$bt1->save();
+		$bt2 = Content::firstOrCreate(["name" => "teamBioText2"]);
+		$bt2->content = $teamBioText2;
+		$bt2->save();
+		$bt2 = Content::firstOrCreate(["name" => "teamBioText3"]);
+		$bt3->content = $teamBioText3;
+		$bt3->save();
+
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+
+	}
+	public function post_admin_save_testimonials(){
+		$testimonial1 = Request::input('inputTestimonial1');
+		$testimonial2 = Request::input('inputTestimonial2');
+		$testimonial3 = Request::input('inputTestimonial3');
+		$t1 = Content::firstOrCreate(["name" => "testimonial1"]);
+		$t1->content = $testimonial1;
+		$t1->save();
+		$t2 = Content::firstOrCreate(["name" => "testimonial2"]);
+		$t2->content = $testimonial2;
+		$t2->save();
+		$t3 = Content::firstOrCreate(["name" => "testimonial3"]);
+		$t3->content = $testimonial3;
+		$t3->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+
+	}
 
 	/**
 	 * Application logout
