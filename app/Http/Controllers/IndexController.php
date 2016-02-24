@@ -24,6 +24,9 @@ class IndexController extends Controller {
 		$content = Content::all();
 		$data = array();
 		foreach ($content as $c) {
+			if ($c->name == "service1" || $c->name == "service2" || $c->name == "service3" || $c->name == "service4") {
+				$c->content = str_replace(" ", "<br />", $c->content);
+			}
 			$data[$c->name] = $c->content;
 		}
 		return view('index')->with(["data" => $data]);
