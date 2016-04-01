@@ -103,6 +103,15 @@ $('.magnific-all').each(function() {
     })
 
     /***************** Owl Carousel ******************/
+    var totalItems = $('.carousel-picture').length;
+    // If there is only one slide
+    if (totalItems < 2) {
+        // Set loop option variable to false
+        var isLooped = false;
+    } else {
+        // Set loop option variable to true
+        var isLooped = true;
+    }
 
     $("#owl-hero").owlCarousel({
 
@@ -110,8 +119,8 @@ $('.magnific-all').each(function() {
         slideSpeed: 300,
         paginationSpeed: 200,
         singleItem: true,
-        transitionStyle: "fade",
-        autoPlay: true,
+        transitionStyle: "fadeUp",
+        autoPlay: isLooped,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
 
     });

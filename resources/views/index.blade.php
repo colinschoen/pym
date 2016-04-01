@@ -73,26 +73,27 @@
         </div>
     </nav>
     <div id="owl-hero" class="owl-carousel owl-theme">
-        <div class="item" style="background-color: black">
+        <div class="item carousel-picture" style="background-color: black">
             <div class="caption">
                 <img src="img/logo/logo.png" style="width:20%; height:20%">
                 <h1><span>{{{ $data["h1Text"] }}}</span></h1>
                 <h5 style="padding-bottom:5%; color: white;">{{{ $data["h1SubText"] }}}<h5>
             </div>
         </div>
-        <div class="item" style="background-color: black">
+        {{--
+         <div class="item carousel-picture" style="background-color: black">
             <div class="caption">
                 <h1>{{{ $data["h2Text"] }}}</h1>
                 <h5 style="padding-bottom:5%; color: white;">{{{ $data["h2SubText"] }}}<h5>
             </div>
         </div>
-        <!-- <div class="item" style="background-image: url(img/sliders/Slide3.jpg)"> -->
-        <div class="item" style="background-color: black">
-            <div class="caption">
-                <h1>{{{ $data["h3Text"] }}}</h1>
-                <h5 style="padding-bottom:5%; color: white;">{{{ $data["h3SubText"] }}}<h5>
-            </div>
-        </div>
+                <div class="item carousel-picture" style="background-color: black">
+                    <div class="caption">
+                        <h1>{{{ $data["h3Text"] }}}</h1>
+                        <h5 style="padding-bottom:5%; color: white;">{{{ $data["h3SubText"] }}}<h5>
+                    </div>
+                </div>
+        --}}
     </div>
 </section>
 
@@ -324,54 +325,56 @@
     <div class="container-fluid">
         <!-- <h2>Our Work</h2> -->
         <!-- <hr class="sep"> -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/army.jpg" alt="1">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/autodesk.jpg" alt="2">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/cholestech.jpg" alt="3">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/clinica.png" alt="4">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/hill.png" alt="8">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/google.jpg" alt="6">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/hba.png" alt="7">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/jansport.jpg" alt="9">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" alt="10">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/northface.jpg" alt="11">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/oracle.png" alt="12">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/roche.jpg" alt="13">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/sap.jpg" alt="14">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/startx.png" alt="15">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/thermofisher.png" alt="16">
-            </div>
-            <div class="col-lg-3 col-sm-4" style="height:100px">
-                <img class="img-responsive center-block" src="img/portfolio/trulia.jpg" alt="17">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/army.jpg" alt="1">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/autodesk.jpg" alt="2">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/cholestech.jpg" alt="3">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/clinica.png" alt="4">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/hill.png" alt="8">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/google.jpg" alt="6">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/hba.png" alt="7">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/jansport.jpg" alt="9">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" alt="10">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/northface.jpg" alt="11">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/oracle.png" alt="12">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/roche.jpg" alt="13">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/sap.jpg" alt="14">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/startx.png" alt="15">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/thermofisher.png" alt="16">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/trulia.jpg" alt="17">
+                </div>
             </div>
         </div>
     </div>
