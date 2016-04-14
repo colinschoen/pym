@@ -56,19 +56,21 @@
                 <div class="col-md-8 col-xs-12 nav-wrap">
                     <ul class="nav navbar-nav">
                         <li><a href="#owl-hero" class="page-scroll words">Home</a></li>
+                        <li><a href="#welcome" class="page-scroll words">About</a></li>
                         <li><a href="#services" class="page-scroll words">Services</a></li>
-                        <li><a href="#portfolio" class="page-scroll words">Process</a></li>
-                        <li><a href="#team" class="page-scroll words">Team</a></li>
+                        <li><a href="#fun-facts" class="page-scroll words">Team</a></li>
+                        <li><a href="#testimonials" class="page-scroll words">Testimonials</a></li>
+                        <li><a href="#portfolio" class="page-scroll words">Clients</a></li>
                         <li><a href="#contact" class="page-scroll words">Contact</a></li>
                     </ul>
                 </div>
-                <div class="social-media hidden-sm hidden-xs">
+                <!-- <div class="social-media hidden-sm hidden-xs">
                     <ul class="nav navbar-nav">
                         <li><a href="#" class="icons"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" class="icons"> <i class="fa fa-twitter"></i></a></li>
                         <li><a href="#" class="icons"><i class="fa fa-instagram"></i></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -144,7 +146,7 @@
 </section>
 
 <!-- Modals -->
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+<!-- <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -208,7 +210,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Facts -->
 <section id="fun-facts">
@@ -287,8 +289,9 @@
         </div>
     </div>
 </section>
+
 <!-- Testimonials -->
-<section id="services">
+<section id="testimonials">
     <div class="container">
         <h1>Our Testimonials</h1>
     </div>
@@ -433,4 +436,3 @@
 </body>
 
 </html>
-

@@ -437,7 +437,7 @@ Services Style
   font-size: 36px;
   color: #fff;
 }
-
+/* ==========================================================================Testimonials Style========================================================================== */.testimonials-container {  width: 100%;  margin-top: 5em;}.testimonials {  padding-right:10%}#testimonials {  background: #24242a;  padding: 60px 0;  text-align: center;}#testimonials h2 {  text-transform: uppercase;  color: #fff;}#testimonials p {  color: #fff;}#testimonials .testimonials-box {  margin-top: 40px;}#testimonials .testimonials-box .col-md-4 {  margin-bottom: 20px;}#testimonials .testimonials-box .col-md-4 .media-left,#testimonials .testimonials-box .col-md-4 .media-right,#testimonials .testimonials-box .col-md-4 .media-body {  padding-right: 30px;  vertical-align: baseline;}#testimonials .testimonials-box .col-md-4 .media-left p,#testimonials .testimonials-box .col-md-4 .media-right p,#testimonials .testimonials-box .col-md-4 .media-body p {  text-align: left;}#testimonials .testimonials-box .col-md-4 .media-left h3,#testimonials .testimonials-box .col-md-4 .media-right h3,#testimonials .testimonials-box .col-md-4 .media-body h3 {  text-transform: uppercase;  color: #fff;  text-align: left;}#testimonials .testimonials-box .col-md-4 .media-left span,#testimonials .testimonials-box .col-md-4 .media-right span,#testimonials .testimonials-box .col-md-4 .media-body span {  font-size: 36px;  color: #fff;}
 /* ==========================================================================
 Portfolio Style
 ========================================================================== */
@@ -1045,7 +1045,7 @@ Media Queries Style
   /*-- Services --*/
   #services h3 {
     font-size: 22px;
-  }
+  }  /*-- testimonials --*/  #testimonials h3 {    font-size: 22px;  }
 
   /*-- section styles --*/
   section h2 {
