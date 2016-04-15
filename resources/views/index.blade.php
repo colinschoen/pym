@@ -361,7 +361,7 @@
                     <img class="img-responsive center-block" src="img/portfolio/navy.png" style="max-height:80px" alt="7">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/jansport.jpg" style="max-height:80px" alt="8">
+                    <img class="img-responsive center-block" src="img/portfolio/airbnb.png" style="max-height:80px" alt="8">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
                     <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" style="max-height:80px" alt="9">
