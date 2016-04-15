@@ -337,46 +337,58 @@
                     <img class="img-responsive center-block" src="img/portfolio/autodesk.jpg" alt="2">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/cholestech.jpg" alt="3">
+                    <img class="img-responsive center-block" src="img/portfolio/premier-logo.png" alt="3">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
                     <img class="img-responsive center-block" src="img/portfolio/clinica.png" alt="4">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/hill.png" alt="8">
+                    <img class="img-responsive center-block" src="img/portfolio/hill.png" alt="5">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
                     <img class="img-responsive center-block" src="img/portfolio/google.jpg" alt="6">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/hba.png" alt="7">
+                    <img class="img-responsive center-block" src="img/portfolio/navy.png" alt="7">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/jansport.jpg" alt="9">
+                    <img class="img-responsive center-block" src="img/portfolio/jansport.jpg" alt="8">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" alt="10">
+                    <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" alt="9">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/northface.jpg" alt="11">
+                    <img class="img-responsive center-block" src="img/portfolio/northface.jpg" alt="10">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/oracle.png" alt="12">
+                    <img class="img-responsive center-block" src="img/portfolio/oracle.png" alt="11">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/roche.jpg" alt="13">
+                    <img class="img-responsive center-block" src="img/portfolio/roche.jpg" alt="12">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/sap.jpg" alt="14">
+                    <img class="img-responsive center-block" src="img/portfolio/sap.jpg" alt="13">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/startx.png" alt="15">
+                    <img class="img-responsive center-block" src="img/portfolio/startx.png" alt="14">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/thermofisher.png" alt="16">
+                    <img class="img-responsive center-block" src="img/portfolio/thermofisher.png" alt="15">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/trulia.jpg" alt="17">
+                    <img class="img-responsive center-block" src="img/portfolio/trulia.jpg" alt="16">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/ideo.png" alt="17">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/genentech.png" alt="18">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/mulago.png" alt="19">
+                </div>
+                <div class="col-lg-3 col-sm-4" style="height:100px">
+                    <img class="img-responsive center-block" src="img/portfolio/blue.png" alt="20">
                 </div>
             </div>
         </div>
