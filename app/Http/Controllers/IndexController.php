@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use Auth, Hash, Request;
+use Auth, Hash, Request, Mail;
 use App\User, App\Content;
 
 class IndexController extends Controller {
@@ -240,5 +240,19 @@ class IndexController extends Controller {
 	public function get_hash($string) {
 		die(Hash::make($string));
     }
+
+	public function post_send_contact() {
+		$name = Request::input('name');
+		$email = Request::input('email');
+		$message = Request::input('message');
+		$body = "Name: " . $name;
+		$body .= "\nEmail: " . $email;
+		$body .= "\nMessage: " . $message;
+		Mail::raw($body, function ($message) {
+			$message->to("cschoen2020@gmail.com")->subject("Riverene Contact Form");
+		});
+		return redirect()->route("index")->with("message", "Thanks, your message was received.");
+
+	}
 
 }
