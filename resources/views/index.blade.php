@@ -98,13 +98,22 @@
         --}}
     </div>
 </section>
-
+@if (Session::has("message"))
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="alert alert-warning alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                {{{ Session::get("message") }}}
+            </div>
+        </div>
+    </div>
+@endif
 <!-- Welcome -->
 <section id="welcome">
     <div class="container">
         <h2>{{{ $data["breakoutHeader"] }}}</h2>
         <hr class="sep">
-        <h4 style="text-align:justify; letter-spacing: 1px; line-height: 60px">{{{ $data["breakoutText"] }}}<h4>
+        <h4>{{{ $data["breakoutText"] }}}</h4>
     </div>
 </section>
 
@@ -402,26 +411,27 @@
     <div class="contact-form">
         <div class="contact-container">
             <h2>Send a Message</h2>
-            <form>
+            <form action="{{ route("sendcontact") }}" method="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                 <div class="contact-messagebox">
                     <label>Your name</label>
                     <br>
-                    <input type="text" name="your-name" placeholder="First Last"/>
+                    <input type="text" name="name" placeholder="First Last"/>
                 </div>
                 <div class="contact-messagebox">
                     <label for="">Your e-mail</label>
                     <br>
-                    <input type="email" name="your-email" placeholder="me@example.com"/>
+                    <input type="email" name="email" placeholder="me@example.com"/>
                 </div>
                 <div class="contact-messagebox">
                     <label for="">Your message</label>
                     <br>
-                    <textarea cols="40" row="10" placeholder="How can we help?"></textarea>
+                    <textarea name="message" cols="40" row="10" placeholder="How can we help?"></textarea>
                 </div>
                 <p>
                     <input type="submit" value="Send Message"/>
                 </p>
-            </form>
+            </formi>
         </div>
     </div>
 </section>
