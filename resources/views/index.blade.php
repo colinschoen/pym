@@ -53,7 +53,7 @@
                 <!-- <a class="navbar-brand" href="#"><img src="http://placehold.it/66x66" class="img-responsive" alt="logo"></a> -->
             </div>
             <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
-                <div class="col-md-8 col-xs-12 nav-wrap">
+                <div class="col-md-12 col-sm-12 col-lg-12 nav-wrap">
                     <ul class="nav navbar-nav">
                         <li><a href="#owl-hero" class="page-scroll words">Home</a></li>
                         <li><a href="#welcome" class="page-scroll words">About</a></li>
@@ -155,13 +155,14 @@
 </section>
 
 <!-- Modals -->
-<!-- <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="../../public/img/breakthrough.png" alt="1">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel1">Achieving Breakthroughs </div>
                     <h2>Based upon the research in Judah’s book, <i>The Breakthrough Myth</i>, this program helps your leaders and teams have big, game changing breakthroughs.</h2>
@@ -177,7 +178,9 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="../../public/img/leadership.jpg" alt="2">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel2">Adaptive Leadership Training </div>
                     <h2>The most important leadership commodity in any organization is trust. It takes years to build and a moment to break.</h2>
@@ -194,7 +197,9 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="../../public/img/coaching.png" alt="3">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel3">Coaching</div>
                     <h2>When you coach a leader you are by extension coaching their team.</h2>
@@ -210,7 +215,9 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="../../public/img/strategy.png" alt="4">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel4">Diagnosing Your Organization </div>
                     <h2>If you want to get to where you’re going, you first need to know where you really are.</h2>
@@ -219,7 +226,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- Facts -->
 <section id="fun-facts">
