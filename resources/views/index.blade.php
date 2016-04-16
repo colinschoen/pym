@@ -161,7 +161,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="../../public/img/breakthrough.png" alt="1">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/breakthrough.png" alt="1">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel1">Achieving Breakthroughs </div>
@@ -179,7 +179,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="../../public/img/leadership.jpg" alt="2">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/leadership.jpg" alt="2">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel2">Adaptive Leadership Training </div>
@@ -198,7 +198,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="../../public/img/coaching.png" alt="3">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/coaching.png" alt="3">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel3">Coaching</div>
@@ -216,7 +216,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="../../public/img/strategy.png" alt="4">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/strategy.png" alt="4">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel4">Diagnosing Your Organization </div>
