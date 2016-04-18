@@ -161,7 +161,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/breakthrough.jpg" alt="1" style="width:350px; height:600px">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/breakthrough.jpg" alt="1" style="width:350px; height:600px; padding-bottom:0px">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel1">Achieving Breakthroughs </div>
@@ -179,12 +179,12 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/leadership.jpg" alt="2" style="width:350px; height:600px">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/leadership.jpg" alt="2" style="width:350px; height:600px; padding-bottom:0px">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel2">Adaptive Leadership Training </div>
                     <h2>If you want to create lasting change give people a tool.</h2>
-                    <h3 style="padding-left:30px;">Peter Senge</h3>
+                    <h2 style="padding-left:50%;">- Peter Senge</h2>
                     <div class="modal-text" id="ModalText2">Teaching your leaders how to adapt to their changing environment is not easy. They don’t need theories of change. They need concrete tools they can use right now. Our trainings, designed using the latest findings in neuroscience, are 90 minutes. This is the ideal length of time for your leaders to really learn a new skill without wasting time. It’s short enough to fit into their workday without being too disruptive. And we give them tools that are immediately applicable to their daily job. Our process is simple, the first 15 minutes we set the frame for the new knowledge. The next 45 minutes we teach one concrete tool and practice using that tool to make the knowledge immediately impactful. The final 30 minutes is devoted to the group identifying how the culture will push back on the tool and help them collaboratively design solutions to help them implement the tool.</div>
                 </div>
             </div>
@@ -198,7 +198,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/coaching.jpg" alt="3" style="width:350px; height:550px">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/coaching.jpg" alt="3" style="width:350px; height:600px; padding-bottom:0px">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel3">Coaching</div>
@@ -216,7 +216,7 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-left">
-                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/strategy.jpg" alt="4" style="width:350px; height:600px">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/strategy.jpg" alt="4" style="width:350px; height:600px; padding-bottom:0px">
                 </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel4">Diagnosing Your Organization </div>
