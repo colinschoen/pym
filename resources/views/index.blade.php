@@ -53,7 +53,7 @@
                 <!-- <a class="navbar-brand" href="#"><img src="http://placehold.it/66x66" class="img-responsive" alt="logo"></a> -->
             </div>
             <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
-                <div class="col-md-8 col-xs-12 nav-wrap">
+                <div class="col-md-12 col-sm-12 col-lg-12 nav-wrap">
                     <ul class="nav navbar-nav">
                         <li><a href="#owl-hero" class="page-scroll words">Home</a></li>
                         <li><a href="#welcome" class="page-scroll words">About</a></li>
@@ -113,7 +113,7 @@
     <div class="container">
         <h2>{{{ $data["breakoutHeader"] }}}</h2>
         <hr class="sep">
-        <h4>{{{ $data["breakoutText"] }}}</h4>
+        <h4 style="line-height:2;">{{{ $data["breakoutText"] }}}</h4>
     </div>
 </section>
 
@@ -155,17 +155,18 @@
 </section>
 
 <!-- Modals -->
-<!-- <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/breakthrough.jpg" alt="1" style="width:350px; height:600px; padding-bottom:0px">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel1">Achieving Breakthroughs </div>
-                    <h2>Based upon the research in Judah’s book, <i>The Breakthrough Myth</i>, this program helps your leaders and teams have big, game changing breakthroughs.</h2>
-                    <div class="modal-text" id="ModalText1">We leverage the best tools from the biggest innovators to help your leaders and teams have high impact breakthroughs. Rather than talk about geniuses and their special processes this program offers specific, concrete tools for individuals and teams to use immediately to increase their chances of breaking through whatever may have been blocking them. By assessing the members of your team we customize the tools to be most effective for your people. </div>
+                    <h2>Based upon the research in Judah’s book, <i>The Commander and the Chorus</i>, this program helps your leaders and teams have big, game changing breakthroughs.</h2>
+                    <div class="modal-text" id="ModalText1">With access to some of the greatest creative minds in business today we have gathered the best, most effective tools from the biggest innovators to help your leaders and teams achieve high impact breakthroughs. First we assess you or the members of your team to see what personal and cognitive dynamics are acting as obstacles. Guided by this knowledge we customize a program of concrete tools for individuals and/or teams to use immediately. We give you a breakthrough practice you can continue to use and build upon for years to come giving you access to things we left out of the book.</div>
                 </div>
             </div>
         </div>
@@ -177,12 +178,14 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/leadership.jpg" alt="2" style="width:350px; height:600px; padding-bottom:0px">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel2">Adaptive Leadership Training </div>
-                    <h2>The most important leadership commodity in any organization is trust. It takes years to build and a moment to break.</h2>
-                    <div class="modal-text" id="ModalText2">We are experts at rapidly establishing trust with our clients and helping them establish trust with their peers. Our trainings, designed using the latest findings in neuroscience, are 90 minutes, short enough to be digestible for your staff and integrate into their workday and be immediately applicable to their daily job. Our process is simple, the first 15 minutes we set the frame for the new knowledge. The next 45 minutes we teach one concrete tool and practice using that tool to make the knowledge immediately impactful. The final 30 minutes is devoted to the group identifying the challenges inherent in their system and using the tool to collaboratively design solutions to preempt them.
-                    </div>
+                    <h2>If you want to create lasting change give people a tool.</h2>
+                    <h2 style="padding-left:50%;">- Peter Senge</h2>
+                    <div class="modal-text" id="ModalText2">Teaching your leaders how to adapt to their changing environment is not easy. They don’t need theories of change. They need concrete tools they can use right now. Our trainings, designed using the latest findings in neuroscience, are 90 minutes. This is the ideal length of time for your leaders to really learn a new skill without wasting time. It’s short enough to fit into their workday without being too disruptive. And we give them tools that are immediately applicable to their daily job. Our process is simple, the first 15 minutes we set the frame for the new knowledge. The next 45 minutes we teach one concrete tool and practice using that tool to make the knowledge immediately impactful. The final 30 minutes is devoted to the group identifying how the culture will push back on the tool and help them collaboratively design solutions to help them implement the tool.</div>
                 </div>
             </div>
         </div>
@@ -194,11 +197,13 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/coaching.jpg" alt="3" style="width:350px; height:600px; padding-bottom:0px">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel3">Coaching</div>
                     <h2>When you coach a leader you are by extension coaching their team.</h2>
-                    <div class="modal-text" id="ModalText3">So, we have found in-the-moment data collection on leader/team dynamics to be an incomparably rich foundation for effective coaching of leaders and their teams. With this high-impact approach, we observe leaders and their teams interacting in their regularly scheduled weekly business meetings, we give real-time feedback to the team and follow-up with 1:1 developmental coaching sessions with the leader. Through a 3 to 12 month engagement that includes targeted leader coaching, as well as spot coaching for team members, plus the design and facilitation of quarterly off-sites, expect dramatic—even exponential—improvement in the effectiveness and satisfaction of leaders, their teams, and the whole organization.</div>
+                    <div class="modal-text" id="ModalText3">Real-time data collection on leader/team dynamics is our foundation for effective coaching of leaders and their teams. With this high-impact approach, we observe the leader-team dynamics in their meetings; provide in-the-moment feedback to the team, then follow-up with 1:1 developmental coaching sessions with the leader. We suggest between 3, 6 and 12-month engagements that include targeted leader coaching, spot coaching for team members, and the design and facilitation of quarterly off-sites. We experience dramatic—even exponential—improvement in the effectiveness and satisfaction of leaders, their teams, and the whole organization.</div>
                 </div>
             </div>
         </div>
@@ -210,16 +215,18 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-left"></div>
+                <div class="modal-left">
+                  <img class="img-responsive center-block team-photo" src="http://riverene.com/img/strategy.jpg" alt="4" style="width:350px; height:600px; padding-bottom:0px">
+                </div>
                 <div class="modal-right">
                     <div class="modal-title" id="ModalLabel4">Diagnosing Your Organization </div>
-                    <h2>If you want to get to where you’re going, you first need to know where you really are.</h2>
-                    <div class="modal-text" id="ModalText4">We skillfully and productively surface the unspoken conflicts and misalignments in and across teams that are getting in the company’s way. We discover what the concrete, day-to-day blockers are to the organization’s mission and goals. Then we drill down to the underlying patterns to find the essential issues and present these to the executive team. Based upon this information we advise executive teams on how to build and maintain the company culture that will best move the organization forward.</div>
+                    <h2>If you want to get to where you’re going, first you need to know where you really are.</h2>
+                    <div class="modal-text" id="ModalText4">We skillfully and productively surface the unspoken conflicts and misalignments in and across teams that are getting in the company’s way. We discover what the concrete, day-to-day blockers are to the organization’s mission and goals. Then we drill down to the underlying patterns to discover the fundamental miscommunications and misunderstandings flowing from the executive level down through the rest of the organization. We present these essential issues to the executive team. Based upon this information we advise executive teams on how to create an easy organizational narrative about the mission and goals that will clear up misunderstandings. We then advise on ways to remove the concrete blockers to help the organization function with less internal resistance and move forward faster.</div>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- Facts -->
 <section id="fun-facts">
@@ -300,7 +307,7 @@
 </section>
 
 <!-- Testimonials -->
-<section id="testimonials">
+<section id="testimonials" style="background-color:#24242a;">
     <div class="container">
         <h1>Our Testimonials</h1>
     </div>
@@ -340,64 +347,64 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/army.jpg" alt="1">
+                    <img class="img-responsive center-block" src="img/portfolio/army.jpg" style="max-height:80px" alt="1">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/autodesk.jpg" alt="2">
+                    <img class="img-responsive center-block" src="img/portfolio/autodesk.jpg" style="max-height:80px" alt="2">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/premier-logo.png" alt="3">
+                    <img class="img-responsive center-block" src="img/portfolio/premier-logo.png" style="max-height:80px" alt="3">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/clinica.png" alt="4">
+                    <img class="img-responsive center-block" src="img/portfolio/clinica.png" style="max-height:80px" alt="4">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/hill.png" alt="5">
+                    <img class="img-responsive center-block" src="img/portfolio/hill.png" style="max-height:80px" alt="5">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/google.jpg" alt="6">
+                    <img class="img-responsive center-block" src="img/portfolio/google.jpg" style="max-height:80px" alt="6">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/navy.png" alt="7">
+                    <img class="img-responsive center-block" src="img/portfolio/navy.png" style="max-height:80px" alt="7">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/jansport.jpg" alt="8">
+                    <img class="img-responsive center-block" src="img/portfolio/airbnb.png" style="max-height:80px" alt="8">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" alt="9">
+                    <img class="img-responsive center-block" src="img/portfolio/lucas.jpg" style="max-height:80px" alt="9">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/northface.jpg" alt="10">
+                    <img class="img-responsive center-block" src="img/portfolio/northface.jpg" style="max-height:80px" alt="10">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/oracle.png" alt="11">
+                    <img class="img-responsive center-block" src="img/portfolio/oracle.png" style="max-height:80px" alt="11">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/roche.jpg" alt="12">
+                    <img class="img-responsive center-block" src="img/portfolio/roche.jpg" style="max-height:80px" alt="12">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/sap.jpg" alt="13">
+                    <img class="img-responsive center-block" src="img/portfolio/sap.jpg" style="max-height:80px" alt="13">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/startx.png" alt="14">
+                    <img class="img-responsive center-block" src="img/portfolio/startx.png" style="max-height:80px" alt="14">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/thermofisher.png" alt="15">
+                    <img class="img-responsive center-block" src="img/portfolio/thermofisher.png" style="max-height:80px" alt="15">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/trulia.jpg" alt="16">
+                    <img class="img-responsive center-block" src="img/portfolio/trulia.jpg" style="max-height:80px" alt="16">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/ideo.png" alt="17">
+                    <img class="img-responsive center-block" src="img/portfolio/ideo.png" style="max-height:80px" alt="17">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/genentech.png" alt="18">
+                    <img class="img-responsive center-block" src="img/portfolio/genentech.png" style="max-height:80px" alt="18">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/mulago.png" alt="19">
+                    <img class="img-responsive center-block" src="img/portfolio/mulago.png" style="max-height:80px" alt="19">
                 </div>
                 <div class="col-lg-3 col-sm-4" style="height:100px">
-                    <img class="img-responsive center-block" src="img/portfolio/blue.png" alt="20">
+                    <img class="img-responsive center-block" src="img/portfolio/blue.png" style="max-height:80px" alt="20">
                 </div>
             </div>
         </div>
