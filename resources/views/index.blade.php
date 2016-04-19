@@ -75,13 +75,15 @@
         </div>
     </nav>
     <div id="owl-hero" class="owl-carousel owl-theme">
+        @foreach ($headers as $header)
         <div class="item carousel-picture" style="background-color: black">
             <div class="caption">
                 <img src="img/logo/logo.png" style="width:20%; height:20%">
-                <h1><span>{{{ $data["h1Text"] }}}</span></h1>
-                <h5 style="padding-bottom:5%; color: white;">{{{ $data["h1SubText"] }}}<h5>
+                <h1><span>{{{ $header->header }}}</span></h1>
+                <h5 style="padding-bottom:5%; color: white;">{{{ $header->subheader }}}<h5>
             </div>
         </div>
+        @endforeach
         {{--
          <div class="item carousel-picture" style="background-color: black">
             <div class="caption">

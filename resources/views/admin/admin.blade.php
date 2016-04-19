@@ -50,9 +50,7 @@
     <div class="row" style="margin-top: 50px;">
         <div class="col-lg-3">
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a data-toggle="tab" href="#htext1">Header Slide 1</a></li>
-                <li class=""><a data-toggle="tab" href="#htext2">Header Slide 2</a></li>
-                <li class=""><a data-toggle="tab" href="#htext3">Header Slide 3</a></li>
+                <li class="active"><a data-toggle="tab" href="#header">Header</a></li>
                 <li class=""><a data-toggle="tab" href="#btext">Breakout Text</a></li>
                 <li class=""><a data-toggle="tab" href="#services">Services</a></li>
                 <li class=""><a data-toggle="tab" href="#team">Team</a></li>
@@ -61,40 +59,44 @@
         </div>
         <div class="col-lg-9">
             <div class="tab-content">
-                <div class="tab-pane active well" id="htext1">
-                    <form action="{{ route("adminsaveh1") }}" method="POST">
+                <div class="tab-pane active well" id="header">
+                    <div style="display: none;" class="header-template">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <label>Header</label>
+                                <input name="inputHeader[]" type="text" class="form-control" placeholder="Header text" />
+                                <br />
+                                <label>Subheading</label>
+                                <input name="inputSubHeader[]" type="text" class="form-control" placeholder="Subheader text" />
+                                <br />
+                                <label>Order</label>
+                                <input name="inputOrder[]" type="text" class="form-control" placeholder="Order Integer (e.g.  3)" />
+                                <br />
+                                <button style="float: right;" class="deleteSlideBtn btn btn-danger">Delete Slide</button>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="{{ route("adminsaveheader") }}" method="POST">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                        <label>Header</label>
-                        <input name="inputText" value="{{{ $data["h1Text"]  }}}" type="text" class="form-control" placeholder="Header text" />
-                        <br />
-                        <label>Subheading</label>
-                        <input name="inputSubText" value="{{{ $data["h1SubText"] }}}" type="text" class="form-control" placeholder="Subheader text" />
-                        <br />
-                        <button class="btn btn-success">Save</button>
-                    </form>
-                </div>
-                <div class="tab-pane well" id="htext2">
-                    <form action="{{ route("adminsaveh2") }}" method="POST">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                        <label>Header</label>
-                        <input name="inputText" value="{{{ $data["h2Text"] }}}" type="text" class="form-control" placeholder="Header text" />
-                        <br />
-                        <label>Subheading</label>
-                        <input name="inputSubText" value="{{{ $data["h2SubText"] }}}" type="text" class="form-control" placeholder="Subheader text" />
-                        <br />
-                        <button class="btn btn-success">Save</button>
-                    </form>
-                </div>
-                <div class="tab-pane well" id="htext3">
-                    <form action="{{ route("adminsaveh3") }}" method="POST">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                        <label>Header</label>
-                        <input name="inputText" value="{{{ $data["h3Text"] }}}" type="text" class="form-control" placeholder="Header text" />
-                        <br />
-                        <label>Subheading</label>
-                        <input name="inputSubText" value="{{{ $data["h3SubText"] }}}" type="text" class="form-control" placeholder="Subheader text" />
-                        <br />
-                        <button class="btn btn-success">Save</button>
+                        <div id="headerModuleContainer">
+                            @foreach ($headers as $header)
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <label>Header</label>
+                                    <input name="inputHeader[]" value="{{{ $header->header  }}}" type="text" class="form-control" placeholder="Header text" />
+                                    <br />
+                                    <label>Subheading</label>
+                                    <input name="inputSubHeader[]" value="{{{ $header->subheader }}}" type="text" class="form-control" placeholder="Subheader text" />
+                                    <br />
+                                    <label>Order</label>
+                                    <input name="inputOrder[]" type="text" value="{{{ $header->sequence }}}" class="form-control" placeholder="Order Integer (e.g.  3)" />
+                                    <br />
+                                    <button type="button" style="float: right;" class="deleteSlideBtn btn btn-danger">Delete Slide</button>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                        <button class="btn btn-success">Save</button> <button id="btnAddHeaderSlide" class="btn btn-primary">+ Add Slide </button>
                     </form>
                 </div>
                 <div class="tab-pane well" id="btext">
@@ -186,5 +188,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#headerModuleContainer").on('click', ".deleteSlideBtn", function(e) {
+            e.preventDefault();
+            $(this).parents(".panel").remove();
+        });
+        $("#btnAddHeaderSlide").on('click', function(e) {
+            e.preventDefault();
+            $('.header-template').children(".panel").clone().appendTo("#headerModuleContainer").show();
+        });
+    });
+</script>
 </body>
 </html>

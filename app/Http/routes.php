@@ -20,9 +20,7 @@ Route::get('admin/hash/{string}', ["as" => "hash", "uses" => "IndexController@ge
 Route::get('admin', ["as" => "admin", "uses" => 'IndexController@get_admin', "middleware" => "auth"]);
 Route::get('admin/logout', ["as" => "doadminlogout", "uses" => 'IndexController@get_admin_logout', "middleware" => "auth"]);
 
-Route::post('admin/save/h1', ["as" => "adminsaveh1", "uses" => "IndexController@post_admin_save_h1", "middleware" => "auth"]);
-Route::post('admin/save/h2', ["as" => "adminsaveh2", "uses" => "IndexController@post_admin_save_h2", "middleware" => "auth"]);
-Route::post('admin/save/h3', ["as" => "adminsaveh3", "uses" => "IndexController@post_admin_save_h3", "middleware" => "auth"]);
+Route::post('admin/save/header', ["as" => "adminsaveheader", "uses" => "IndexController@post_admin_save_header", "middleware" => "auth"]);
 
 Route::post('admin/save/btext', ["as" => "adminsavebtext", "uses" => "IndexController@post_admin_save_btext", "middleware" => "auth"]);
 

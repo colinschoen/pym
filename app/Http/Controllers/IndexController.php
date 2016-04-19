@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
-use Auth, Hash, Request, Mail;
-use App\User, App\Content;
+use Auth, Hash, Request, Mail, DB;
+use App\User, App\Content, App\Header;
 
 class IndexController extends Controller {
 
@@ -29,7 +29,8 @@ class IndexController extends Controller {
 			}
 			$data[$c->name] = $c->content;
 		}
-		return view('index')->with(["data" => $data]);
+		$headers = Header::orderBy("sequence", "ASC")->get();
+		return view('index')->with(["data" => $data, "headers" => $headers]);
 	}
 
 
@@ -87,7 +88,27 @@ class IndexController extends Controller {
 		foreach ($content as $c) {
 			$data[$c->name] = $c->content;
 		}
-		return view('admin.admin')->with(["data" => $data]);
+		$headers = Header::orderBy("sequence", "ASC")->get();
+		return view('admin.admin')->with(["data" => $data, "headers" => $headers]);
+	}
+	
+	public function post_admin_save_header() {
+		$dataHeader = Request::input('inputHeader');
+		$dataSubHeader = Request::input('inputSubHeader');
+		$dataOrder = Request::input('inputOrder');
+		#First delete all existing header content
+		DB::table("headers")->delete();
+		$total = count($dataHeader);
+		$i = 0;
+		while ($i < $total) {
+			$header = new Header;
+			$header->header = $dataHeader[$i];
+			$header->subheader = $dataSubHeader[$i];
+			$header->sequence= $dataOrder[$i];
+			$header->save();
+			$i++;
+		}
+		return redirect()->route("admin")->with("message", "Header successfully updated.");
 	}
 
 	public function post_admin_save_h1(){
