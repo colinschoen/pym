@@ -242,6 +242,28 @@ class IndexController extends Controller {
     }
 
 	public function post_send_contact() {
+		#Verify the recapatcha was valid
+		$payload = array(
+			"secret" => urlencode("6Ld0wR0TAAAAAPPQo5E_O2ZmWrErf5wINsgFvndS"),
+			"response" => Request::input("g-recaptcha-response"),
+			"remoteip" => Request::ip()
+		);
+		$fields_string = "";
+		foreach($payload as $key=>$value) {
+			$fields_string .= $key.'='.$value.'&';
+		}
+		rtrim($fields_string, '&');
+		$url = "https://www.google.com/recaptcha/api/siteverify";
+		$ch = curl_init();
+		//set the url, number of POST vars, POST data
+		curl_setopt($ch,CURLOPT_URL, $url);
+		curl_setopt($ch,CURLOPT_POST, count($payload));
+		curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+		$result = curl_exec($ch);
+		curl_close($ch);
+		if ($result["success"] == "false") {
+			return redirect()->route("index")->with("message", "Antispam verification failed.");
+		}
 		$name = Request::input('name');
 		$email = Request::input('email');
 		$message = Request::input('message');

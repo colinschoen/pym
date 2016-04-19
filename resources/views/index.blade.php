@@ -428,10 +428,14 @@
                     <br>
                     <textarea name="message" cols="40" row="10" placeholder="How can we help?"></textarea>
                 </div>
+                <div class="contact-messagebox">
+                    <div style="padding-left: 5%;" class="g-recaptcha" data-sitekey="6Ld0wR0TAAAAAFVYdim6aslIInIpifx2Au8mq5O-"></div>
+                </div>
+                <br />
                 <p>
                     <input type="submit" value="Send Message"/>
                 </p>
-            </formi>
+            </form>
         </div>
     </div>
 </section>
@@ -445,6 +449,7 @@
 
 <!-- JS PLUGINS -->
 <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
 <script src="plugins/countTo/jquery.countTo.js"></script>
