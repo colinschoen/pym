@@ -245,12 +245,15 @@
             <div class="col-md-12">
                 <div class="col-md-4">
                     <section class="magnific-all">
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-1.jpg" class="magnific item" data-title="item 1">
-                            <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage1"] }}}" alt="1">
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=pzot1TWuutY" class="magnific-youtube item" data-title="item 2"></a>
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-3.jpg" class="magnific item" data-title="item 3"></a>
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-4.jpg" class="magnific item" data-title="item 4"></a>
+                        @if (strstr($data["teamContent1"], "youtube.com"))
+                            <a href="{{{ $data["teamContent1"] }}}" class="magnific-youtube item" data-title="item 1">
+                                <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage1"] }}}" alt="1">
+                            </a>
+                        @else
+                            <a href="{{{ $data["teamContent1"] }}}" class="magnific item" data-title="item 1">
+                                <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage1"] }}}" alt="1">
+                            </a>
+                        @endif
                     </section>
                 </div>
 
@@ -266,12 +269,15 @@
             <div class="col-md-12">
                 <div class="col-md-4">
                     <section class="magnific-all">
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-1.jpg" class="magnific item" data-title="item 1">
-                            <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage2"] }}}" alt="1">
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=pzot1TWuutY" class="magnific-youtube item" data-title="item 2"></a>
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-3.jpg" class="magnific item" data-title="item 3"></a>
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-4.jpg" class="magnific item" data-title="item 4"></a>
+                        @if (strstr($data["teamContent2"], "youtube.com"))
+                            <a href="{{{ $data["teamContent2"] }}}" class="magnific-youtube item" data-title="item 1">
+                                <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage2"] }}}" alt="1">
+                            </a>
+                        @else
+                            <a href="{{{ $data["teamContent2"] }}}" class="magnific item" data-title="item 1">
+                                <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage2"] }}}" alt="1">
+                            </a>
+                        @endif
                     </section>
                 </div>
 
@@ -287,12 +293,15 @@
             <div class="col-md-12">
                 <div class="col-md-4">
                     <section class="magnific-all">
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-1.jpg" class="magnific item" data-title="item 1">
-                            <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage3"] }}}" alt="1">
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=pzot1TWuutY" class="magnific-youtube item" data-title="item 2"></a>
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-3.jpg" class="magnific item" data-title="item 3"></a>
-                        <a href="http://www.oxygenna.com/wp-content/uploads/2014/11/blog-4.jpg" class="magnific item" data-title="item 4"></a>
+                        @if (strstr($data["teamContent3"], "youtube.com"))
+                            <a href="{{{ $data["teamContent3"] }}}" class="magnific-youtube item" data-title="item 1">
+                                <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage3"] }}}" alt="1">
+                            </a>
+                        @else
+                            <a href="{{{ $data["teamContent3"] }}}" class="magnific item" data-title="item 1">
+                                <img class="img-responsive center-block team-photo" src="{{{ $data["teamImage3"] }}}" alt="1">
+                            </a>
+                        @endif
                     </section>
                 </div>
 

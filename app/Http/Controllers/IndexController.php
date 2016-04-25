@@ -195,6 +195,10 @@ class IndexController extends Controller {
 		$teamBioText2 = Request::input('inputTeamBioText2');
 		$teamBioText3 = Request::input('inputTeamBioText3');
 
+		$teamContent1 = Request::input('inputTeamContent1');
+		$teamContent2 = Request::input('inputTeamContent2');
+		$teamContent3 = Request::input('inputTeamContent3');
+		
 		$tn1 = Content::firstOrCreate(["name" => "teamName1"]);
 		$tn1->content = $teamName1;
 		$tn1->save();
@@ -221,9 +225,19 @@ class IndexController extends Controller {
 		$bt2 = Content::firstOrCreate(["name" => "teamBioText2"]);
 		$bt2->content = $teamBioText2;
 		$bt2->save();
-		$bt2 = Content::firstOrCreate(["name" => "teamBioText3"]);
+		$bt3 = Content::firstOrCreate(["name" => "teamBioText3"]);
 		$bt3->content = $teamBioText3;
 		$bt3->save();
+		
+		$ct1 = Content::firstOrCreate(["name" => "teamContent1"]);
+		$ct1->content = $teamContent1;
+		$ct1->save();
+		$ct2 = Content::firstOrCreate(["name" => "teamContent2"]);
+		$ct2->content = $teamContent2;
+		$ct2->save();
+		$ct3 = Content::firstOrCreate(["name" => "teamContent3"]);
+		$ct3->content = $teamContent3;
+		$ct3->save();
 
 		return redirect()->route("admin")->with("message", "Changes saved successfully.");
 

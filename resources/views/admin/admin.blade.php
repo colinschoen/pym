@@ -140,6 +140,9 @@
                         <br />
                         <label>Bio Text</label>
                         <input name="inputTeamBioText1" value="{{{ $data["teamBioText1"] }}}" type="text" class="form-control" placeholder="Bio" />
+                        <br />
+                        <label>Content (Image or Youtube video link)</label>
+                        <input name="inputTeamContent1" value="{{{ $data["teamContent1"] }}}" type="text" class="form-control" placeholder="E.g. (https://www.youtube.com/watch?v=pzot1TWuutY) or (https://imagehost.com/img.jpeg)" />
                         <hr />
                         <br />
                         <label>Name</label>
@@ -150,6 +153,9 @@
                         <br />
                         <label>Bio Text</label>
                         <input name="inputTeamBioText2" value="{{{ $data["teamBioText2"] }}}" type="text" class="form-control" placeholder="Bio" />
+                        <br />
+                        <label>Content (Image or Youtube video link)</label>
+                        <input name="inputTeamContent2" value="{{{ $data["teamContent2"] }}}" type="text" class="form-control" placeholder="E.g. (https://www.youtube.com/watch?v=pzot1TWuutY) or (https://imagehost.com/img.jpeg)" />
                         <hr />
                         <br />
                         <label>Name</label>
@@ -160,6 +166,9 @@
                         <br />
                         <label>Bio Text</label>
                         <input name="inputTeamBioText3" value="{{{ $data["teamBioText3"] }}}" type="text" class="form-control" placeholder="Bio" />
+                        <br />
+                        <label>Content (Image or Youtube video link)</label>
+                        <input name="inputTeamContent3" value="{{{ $data["teamContent3"] }}}" type="text" class="form-control" placeholder="E.g. (https://www.youtube.com/watch?v=pzot1TWuutY) or (https://imagehost.com/img.jpeg)" />
                         <hr />
                         <br />
                         <button class="btn btn-success">Save</button>
