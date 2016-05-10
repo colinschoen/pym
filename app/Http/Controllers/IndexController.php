@@ -306,7 +306,7 @@ class IndexController extends Controller {
 		$body .= "\nEmail: " . $email;
 		$body .= "\nMessage: " . $message;
 		Mail::raw($body, function ($message) {
-			$message->to("cschoen2020@gmail.com")->subject("Riverene Contact Form");
+			$message->to("dov@pollacksilvapollack.com")->subject("Riverene Contact Form");
 		});
 		return redirect()->route("index")->with("message", "Thanks, your message was received.");
 
