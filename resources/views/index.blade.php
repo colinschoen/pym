@@ -132,25 +132,25 @@
         <div class="col-lg-3">
             <a class="btn" data-toggle="modal" data-target="#myModal1">
                 <span class="fa fa-line-chart fa-2x"></span>
-                <h2>1.{!!  $data["service1"] !!}</h2>
+                <h2>{!!  $data["service1"] !!}</h2>
             </a>
         </div>
         <div class="col-lg-3">
             <a class="btn" data-toggle="modal" data-target="#myModal2">
                 <span class="fa fa-unlock fa-2x"></span>
-                <h2>2.{!! $data["service2"] !!}</h2>
+                <h2>{!! $data["service2"] !!}</h2>
             </a>
         </div>
         <div class="col-lg-3">
             <a class="btn" data-toggle="modal" data-target="#myModal3">
                 <span class="fa fa-trophy fa-2x"></span>
-                <h2>3.{!! $data["service3"] !!}</h2>
+                <h2>3!! $data["service3"] !!}</h2>
             </a>
         </div>
         <div class="col-lg-3">
             <a class="btn" data-toggle="modal" data-target="#myModal4">
                 <span class="fa fa-search fa-2x"></span>
-                <h2>4.{!! $data["service4"] !!}</h2>
+                <h2>{!! $data["service4"] !!}</h2>
             </a>
         </div>
     </div>
