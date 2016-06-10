@@ -144,7 +144,7 @@
         <div class="col-lg-3">
             <a class="btn" data-toggle="modal" data-target="#myModal3">
                 <span class="fa fa-trophy fa-2x"></span>
-                <h2>3!! $data["service3"] !!}</h2>
+                <h2>{!! $data["service3"] !!}</h2>
             </a>
         </div>
         <div class="col-lg-3">
