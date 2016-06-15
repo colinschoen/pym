@@ -258,6 +258,16 @@ class IndexController extends Controller {
 		return redirect()->route("admin")->with("message", "Changes saved successfully.");
 
 	}
+	
+	public function post_admin_save_profile() 
+	{
+		$password = Hash::make(Request::input('inputPassword'));
+		$user = Auth::user();
+		$user->password = $password;
+		$user->save();
+		return redirect()->route("admin")->with("message", "Changes saved successfully.");
+
+	}
 
 	/**
 	 * Application logout

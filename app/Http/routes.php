@@ -31,6 +31,8 @@ Route::post('admin/save/team', ["as" => "adminsaveteam", "uses" => "IndexControl
 
 Route::post('admin/save/testimonials', ["as" => "adminsavetestimonials", "uses" => "IndexController@post_admin_save_testimonials", "middleware" => "auth"]);
 
+Route::post('admin/save/profile', ["as" => "adminsaveprofile", "uses" => 'IndexController@post_admin_save_profile']);
+
 Route::post('send/contact', ["as" => "sendcontact", "uses" => "IndexController@post_send_contact"]);
 
 Route::controllers([

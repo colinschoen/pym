@@ -55,6 +55,7 @@
                 <li class=""><a data-toggle="tab" href="#services">Services</a></li>
                 <li class=""><a data-toggle="tab" href="#team">Team</a></li>
                 <li class=""><a data-toggle="tab" href="#testimonials">Testimonials</a></li>
+                <li class=""><a data-toggle="tab" href="#profile">Admin Password</a></li>
             </ul>
         </div>
         <div class="col-lg-9">
@@ -189,6 +190,16 @@
                         <button class="btn btn-success">Save</button>
                     </form>
                 </div>
+                <div class="tab-pane well" id="profile">
+                    <form action="{{ route("adminsaveprofile") }}" method="POST">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                        <label>New Password</label>
+                        <input name="inputPassword" value="" type="password" class="form-control" />
+                        <br />
+                        <button class="btn btn-success">Update Password</button>
+                    </form>
+                </div>
+                <div class="tab-pane well" id="team">
             </div>
         </div>
     </div>
