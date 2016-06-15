@@ -278,14 +278,6 @@ class IndexController extends Controller {
 		return redirect()->route("adminlogin")->with("message", "You have successfully been logged out.");
 	}
 
-    /**
-	 * Get a bcrypt hash of a string
-	 * @return String
-	 */
-	public function get_hash($string) {
-		die(Hash::make($string));
-    }
-
 	public function post_send_contact() {
 		#Verify the recapatcha was valid
 		$payload = array(
