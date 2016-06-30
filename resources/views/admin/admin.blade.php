@@ -117,15 +117,19 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <label>Service 1</label>
                         <input name="inputService1" value="{{{ $data["service1"]  }}}" type="text" class="form-control" placeholder="Service 1" />
+                        <textarea name="inputService1Body" class="form-control" placeholder="Body...">{{{ $data["service1Body"] }}}</textarea>
                         <br />
                         <label>Service 2</label>
                         <input name="inputService2" value="{{{ $data["service2"]  }}}" type="text" class="form-control" placeholder="Service 2" />
+                        <textarea name="inputService2Body" class="form-control" placeholder="Body...">{{{ $data["service2Body"] }}}</textarea>
                         <br />
                         <label>Service 3</label>
                         <input name="inputService3" value="{{{ $data["service3"]  }}}" type="text" class="form-control" placeholder="Service 3" />
+                        <textarea name="inputService3Body" class="form-control" placeholder="Body...">{{{ $data["service3Body"] }}}</textarea>
                         <br />
                         <label>Service 4</label>
                         <input name="inputService4" value="{{{ $data["service4"]  }}}" type="text" class="form-control" placeholder="Service 4" />
+                        <textarea name="inputService4Body" class="form-control" placeholder="Body...">{{{ $data["service4Body"] }}}</textarea>
                         <br />
                         <button class="btn btn-success">Save</button>
                     </form>

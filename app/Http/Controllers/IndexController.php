@@ -165,21 +165,37 @@ class IndexController extends Controller {
 	}
 	public function post_admin_save_services(){
 		$service1 = Request::input('inputService1');
+		$service1Body = Request::input('inputService1Body');
 		$service2 = Request::input('inputService2');
+		$service2Body = Request::input('inputService2Body');
 		$service3 = Request::input('inputService3');
+		$service3Body = Request::input('inputService3Body');
 		$service4 = Request::input('inputService4');
+		$service4Body = Request::input('inputService4Body');
 		$s1 = Content::firstOrCreate(["name" => "service1"]);
 		$s1->content = $service1;
 		$s1->save();
+		$s1Body = Content::firstOrCreate(["name" => "service1Body"]);
+		$s1Body->content = $service1Body;
+		$s1Body->save();
 		$s2 = Content::firstOrCreate(["name" => "service2"]);
 		$s2->content = $service2;
 		$s2->save();
+		$s2Body = Content::firstOrCreate(["name" => "service2Body"]);
+		$s2Body->content = $service2Body;
+		$s2Body->save();
 		$s3 = Content::firstOrCreate(["name" => "service3"]);
 		$s3->content = $service3;
 		$s3->save();
+		$s3Body = Content::firstOrCreate(["name" => "service3Body"]);
+		$s3Body->content = $service3Body;
+		$s3Body->save();
 		$s4 = Content::firstOrCreate(["name" => "service4"]);
 		$s4->content = $service4;
 		$s4->save();
+		$s4Body = Content::firstOrCreate(["name" => "service4Body"]);
+		$s4Body->content = $service4Body;
+		$s4Body->save();
 		return redirect()->route("admin")->with("message", "Changes saved successfully.");
 	}
 	public function post_admin_save_team(){
