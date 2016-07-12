@@ -95,6 +95,9 @@ class IndexController extends Controller {
 	public function post_admin_save_header() {
 		$dataHeader = Request::input('inputHeader');
 		$dataSubHeader = Request::input('inputSubHeader');
+		$dataButtonText = Request::input('inputButtonText');
+		$dataButtonUrl = Request::input('inputButtonUrl');
+		$dataBackground = Request::input('inputBackground');
 		$dataOrder = Request::input('inputOrder');
 		#First delete all existing header content
 		DB::table("headers")->delete();
@@ -104,6 +107,9 @@ class IndexController extends Controller {
 			$header = new Header;
 			$header->header = $dataHeader[$i];
 			$header->subheader = $dataSubHeader[$i];
+			$header->button_text = $dataButtonText[$i];
+			$header->button_url = $dataButtonUrl[$i];
+			$header->background = $dataBackground[$i];
 			$header->sequence= $dataOrder[$i];
 			$header->save();
 			$i++;

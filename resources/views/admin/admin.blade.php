@@ -89,6 +89,15 @@
                                     <label>Subheading</label>
                                     <input name="inputSubHeader[]" value="{{{ $header->subheader }}}" type="text" class="form-control" placeholder="Subheader text" />
                                     <br />
+                                    <label>Button Text</label>
+                                    <input name="inputButtonText[]" value="{{{ $header->button_text }}}" type="text" class="form-control" placeholder="Button text" />
+                                    <br />
+                                    <label>Button URL</label>
+                                    <input name="inputButtonUrl[]" value="{{{ $header->button_url }}}" type="text" class="form-control" placeholder="Button URL" />
+                                    <br />
+                                    <label>Background Image URL</label>
+                                    <input name="inputBackground[]" value="{{{ $header->background }}}" type="text" class="form-control" placeholder="Background Image URL" />
+                                    <br />
                                     <label>Order</label>
                                     <input name="inputOrder[]" type="text" value="{{{ $header->sequence }}}" class="form-control" placeholder="Order Integer (e.g.  3)" />
                                     <br />

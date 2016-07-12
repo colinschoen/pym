@@ -76,11 +76,20 @@
     </nav>
     <div id="owl-hero" class="owl-carousel owl-theme">
         @foreach ($headers as $header)
-        <div class="item carousel-picture" style="background-color: black">
+        <div class="item carousel-picture" style="@if (!empty($header->background)) background-image: url('{{{ $header->background }}}'); @else background-color: black; @endif ">
             <div class="caption">
                 <img src="img/logo/logo.png" style="width:20%; height:20%">
                 <h1><span>{{{ $header->header }}}</span></h1>
-                <h5 style="padding-bottom:5%; color: white;">{{{ $header->subheader }}}<h5>
+                <h5 style="padding-bottom:5%; color: white;">{{{ $header->subheader }}}</h5>
+                @if (!empty($header->button_text))
+                    @if (!empty($header->button_url))
+                    <a href="{{{ $header->button_url }}}" target="_blank">
+                    @endif
+                    <button class="btn btn-default">{{{ $header->button_text }}}</button>
+                    @if (!empty($header->button_url))
+                    </a>
+                    @endif
+                @endif
             </div>
         </div>
         @endforeach
