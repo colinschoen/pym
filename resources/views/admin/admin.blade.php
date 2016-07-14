@@ -70,6 +70,15 @@
                                 <label>Subheading</label>
                                 <input name="inputSubHeader[]" type="text" class="form-control" placeholder="Subheader text" />
                                 <br />
+                                <label>Button Text</label>
+                                <input name="inputButtonText[]" type="text" class="form-control" placeholder="Button text" />
+                                <br />
+                                <label>Button URL</label>
+                                <input name="inputButtonUrl[]" type="text" class="form-control" placeholder="Button URL" />
+                                <br />
+                                <label>Background Image URL</label>
+                                <input name="inputBackground[]" type="text" class="form-control" placeholder="Background Image URL" />
+                                <br />
                                 <label>Order</label>
                                 <input name="inputOrder[]" type="text" class="form-control" placeholder="Order Integer (e.g.  3)" />
                                 <br />
